@@ -23,6 +23,10 @@ a {
   color: var(--font-color-1);
 }
 
+li {
+  list-style: none;
+}
+
 body {
   background-color: var(--main-background);
   color: var(--font-color-1);
@@ -96,7 +100,8 @@ main {
 .icons-container {
   margin-top: 10px;
   text-align: left;
-  margin-left: -100px;
+  margin-left: -120px;
+  display: flex;
 }
 
 .main-icon {
