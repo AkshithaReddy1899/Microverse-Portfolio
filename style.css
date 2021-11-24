@@ -1,11 +1,11 @@
 :root {
-    --nav-background: #3c3a39;
-    --main-background: #1c1a19;
-    --font-color-1: #fff;
-    --font-color-2: #ff6b00;
-    --font-round: 'Crete Round', serif;
-    --font-poppins: 'Poppins', sans-serif;
-    --font-roboto: 'Roboto', sans-serif;
+  --nav-background: #3c3a39;
+  --main-background: #1c1a19;
+  --font-color-1: #fff;
+  --font-color-2: #ff6b00;
+  --font-round: 'Crete Round', serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
   }
 
 /* General styling */
@@ -48,7 +48,7 @@ nav {
   background: transparent;
 }
 
-/* main*/
+/* main */
 
 main {
   width: 100vw;
@@ -81,7 +81,7 @@ main {
   line-height: 32px;
   display: flex;
   align-items: center;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .description-para {
@@ -89,7 +89,7 @@ main {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .icons-container {
@@ -108,6 +108,6 @@ main {
   background-repeat: no-repeat;
   background-image: url('./assest/Illustration.svg');
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   right: 0;
 }
