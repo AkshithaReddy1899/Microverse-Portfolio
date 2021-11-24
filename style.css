@@ -6,7 +6,7 @@
   --font-round: 'Crete Round', serif;
   --font-poppins: 'Poppins', sans-serif;
   --font-roboto: 'Roboto', sans-serif;
-  }
+}
 
 /* General styling */
 
@@ -59,6 +59,7 @@ main {
   flex-direction: column;
   padding: 0 20px;
 }
+
 .home-page {
   padding: 0 15px;
 }
