@@ -370,14 +370,15 @@ color : #f55800;
 }
 
 .about-btn {
-  font-family: Inter;
-  font-style: normal;font-weight: bold;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   display: flex;
   align-items: center;text-align: center;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #fff;
   border: none;
   outline: none;
   padding: 10px;
@@ -398,7 +399,7 @@ color : #f55800;
   margin-top: -160px;
 }
 
-.about-line{
+.about-line {
   width: 90%;
   border: 1px solid white;
   margin: 30px auto;
@@ -420,8 +421,8 @@ color : #f55800;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
-  margin: 0px 12px;
+  color: #fff;
+  margin: 0 12px;
 }
 
 .skill-lang-li {
@@ -430,6 +431,6 @@ color : #f55800;
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
-  color: #FFFFFF;
+  color: #fff;
   margin: 20px auto;
 }
