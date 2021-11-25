@@ -120,7 +120,6 @@ main {
   right: 0;
 }
 
-/***************/
 /* WORK SECTION */
 
 .work {
@@ -138,7 +137,7 @@ main {
   font-weight: normal;
 }
 
-.work hr{
+.work hr {
   width: 84%;
   border: 1px solid #212121;
   margin: 24px auto;
@@ -194,14 +193,14 @@ main {
   margin: 12px 0;
 }
 
-.lang-list-ul{
+.lang-list-ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.lang-list{
+.lang-list {
   font-family: var(--font-inter);
   font-style: normal;
   font-weight: 500;
@@ -230,7 +229,7 @@ main {
   background: var(--font-color-2);
 }
 
-/* General Grid Styling*/
+/* General Grid Styling */
 
 .grid-project-container {
   margin: 50px auto 0 auto;
@@ -281,7 +280,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -290,50 +289,50 @@ main {
   letter-spacing: 0.03em;
   color: var(--font-color-1);
 }
+
 /* GRID 1 */
 
-.grid-1 { 
+.grid-1 {
   grid-area: grid-1;
 }
 
-.grid-2 { 
+.grid-2 {
   grid-area: grid-2;
 }
 
-.grid-3 { 
+.grid-3 {
   grid-area: grid-3;
 }
 
-.grid-4 { 
+.grid-4 {
   grid-area: grid-4;
 }
 
-.grid-5 { 
+.grid-5 {
   grid-area: grid-5;
 }
 
-.grid-6 { 
+.grid-6 {
   grid-area: grid-6;
 }
-
 
 /* grid button hover */
 
 .grid-btn:hover,
 .project-btn:hover {
-background: #FFF5E1;
-border: 1px solid #F55800;
-color : #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color : #f55800;
 }
 
 .grid-btn:active,
 .project-btn:active {
-  background: #E05304;
+  background: #e05304;
   color: var(--font-color-1);
 }
 
 .grid-btn:disabled,
-.grid-btn:disabled {
+.project-btn:disabled {
   background: #f4f1f0;
   color: #5b5957;
 }
@@ -349,22 +348,23 @@ color : #f55800;
 }
 
 .about-header {
-  font-family: Crete Round;
+  font-family: var(--font-round);
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
   line-height: 88px;
-  margin: 120px auto 0px auto;
+  margin: 120px auto 0 auto;
   letter-spacing: 0.37px;
   color: var(--font-color-2);
 }
 
 .about-description {
   font-family: var(--font-inter);
-  font-style: normal;font-weight: normal;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
   margin: 20px;
   text-align: left;
 }
@@ -376,7 +376,8 @@ color : #f55800;
   font-size: 17px;
   line-height: 24px;
   display: flex;
-  align-items: center;text-align: center;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
   border: none;
