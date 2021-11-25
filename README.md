@@ -1,8 +1,11 @@
 # Microverse-Portfolio-Project
 
-Portfolio project to understand how to parse a Figma design to create a UI
+Portfolio project to understand how to parse a Figma design to create a UI.
+Flexbox to place elements in the page.
+Build a personal portfolio site.
+Use images and backgrounds to enhance the look of the website.
 
-screenshot
+![Screenshot](https://user-images.githubusercontent.com/70577783/143285496-b74a920d-c80f-4400-af28-0739e8ac33f4.png)
 
 # Project Objectives
 
@@ -20,7 +23,7 @@ HTML
 CSS
 
 
-# Authors
+# Author
 👤 Akshitha Reddy
 
 GitHub: https://github.com/AkshithaReddy1899
