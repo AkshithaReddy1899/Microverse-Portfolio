@@ -5,7 +5,7 @@ Flexbox to place elements in the page.
 Build a personal portfolio site.
 Use images and backgrounds to enhance the look of the website.
 
-https://github.com/AkshithaReddy1899/Microverse-Portfolio/issues/2#issue-1062684868
+![Portfolio](https://user-images.githubusercontent.com/70577783/143551478-492cca22-8213-4d55-aa40-f85daab4f30e.png)
 
 # Project Objectives
 
