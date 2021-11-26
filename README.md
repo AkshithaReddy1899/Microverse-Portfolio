@@ -5,13 +5,13 @@ Flexbox to place elements in the page.
 Build a personal portfolio site.
 Use images and backgrounds to enhance the look of the website.
 
-![Screenshot](https://user-images.githubusercontent.com/70577783/143285496-b74a920d-c80f-4400-af28-0739e8ac33f4.png)
+https://github.com/AkshithaReddy1899/Microverse-Portfolio/issues/2#issue-1062684868
 
 # Project Objectives
 
 Understand how to parse a Figma design to create a UI.
 
-Flexbox to place elements in the page.
+Use Flexbox and Grid to place elements in the page.
 
 Build a personal portfolio site.
 
