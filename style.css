@@ -29,7 +29,6 @@ li {
 }
 
 body {
-  width: 100vw;
   background-color: var(--main-background);
   color: var(--font-color-1);
 }
@@ -125,8 +124,7 @@ main {
 .work {
   background: var(--font-color-1);
   color: var(--main-background);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .work-header {
@@ -148,7 +146,7 @@ main {
 }
 
 .work-grid {
-  display: inline-grid;
+  display: grid;
   justify-items: center;
   align-items: center;
   grid-template-columns: 1fr 300px 1fr;
@@ -166,7 +164,7 @@ main {
 
 /* MAIN GRID */
 
-.wor-main-grid {
+.work-main-grid {
   grid-area: main-grid;
 }
 
@@ -184,19 +182,10 @@ main {
   margin: 12px 0;
 }
 
-.work-project-para {
-  font-family: var(--font-inter);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 12px 0;
-}
-
 .lang-list-ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -207,7 +196,7 @@ main {
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
-  margin: 0 12px;
+  margin: 10px 12px;
   border: 1px solid #8993a4;
   padding: 10px;
 }
@@ -222,8 +211,8 @@ main {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  margin-top: 12px;
-  margin-left: 25px;
+  margin-top: 10px;
+  margin-left: 20px;
   width: 124px;
   height: 48px;
   background: var(--font-color-2);
@@ -290,6 +279,7 @@ main {
   color: var(--font-color-1);
 }
 
+
 /* GRID 1 */
 
 .grid-1 {
@@ -337,14 +327,10 @@ main {
   color: #5b5957;
 }
 
-/* About Section */
+/*About Section */
+
 .about {
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   text-align: center;
-  flex-direction: column;
 }
 
 .about-header {
@@ -389,27 +375,23 @@ main {
 }
 
 .about-illustration {
-  background-image: url('./assest/illustration-about-me-mobile.svg');
-  background-repeat: no-repeat;
-  width: 150px;
-  height: 320px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin-left: 210px;
-  margin-top: -160px;
+  width: 100%;
+  text-align: right;
+  padding-top: -80px;
 }
 
 .about-line {
   width: 90%;
-  border: 1px solid white;
+  border: none;
   margin: 30px auto;
+  border-top: 1px solid white;
 }
 
 /* SKILLS */
 
-.skills {
+.skills{
   text-align: center;
+  margin-top: 100px;
 }
 
 .skills-lang {
