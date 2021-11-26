@@ -279,7 +279,6 @@ main {
   color: var(--font-color-1);
 }
 
-
 /* GRID 1 */
 
 .grid-1 {
@@ -327,7 +326,7 @@ main {
   color: #5b5957;
 }
 
-/*About Section */
+/* About Section */
 
 .about {
   text-align: center;
@@ -389,7 +388,7 @@ main {
 
 /* SKILLS */
 
-.skills{
+.skills {
   text-align: center;
   margin-top: 100px;
 }
