@@ -3,10 +3,10 @@
   --main-background: #1c1a19;
   --font-color-1: #fff;
   --font-color-2: #ff6b00;
-  --font-round: 'Crete Round', serif;
-  --font-poppins: 'Poppins', sans-serif;
-  --font-roboto: 'Roboto', sans-serif;
-  --font-inter: 'Inter', sans-serif;
+  --font-round: "Crete Round", serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 /* General styling */
@@ -113,7 +113,7 @@ main {
   width: 150px;
   height: 320px;
   background-repeat: no-repeat;
-  background-image: url('./assest/Illustration.svg');
+  background-image: url("./assest/Illustration.svg");
   position: absolute;
   bottom: 0;
   right: 0;
@@ -224,7 +224,12 @@ main {
   margin: 50px auto 0 auto;
   width: 86%;
   height: 368px;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(image_processing20200427-30692-7af91d.png);
+  background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url(image_processing20200427-30692-7af91d.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -417,6 +422,7 @@ main {
   margin: 20px auto;
 }
 
+/* Contact-me section */
 .footer {
   background-color: var(--font-color-1);
   padding: 0 24px;
@@ -430,4 +436,45 @@ main {
   margin: 24px 0px;
   font-family: var(--font-inter);
   padding-top: 120px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin: 20px 0;
+  border: 0;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 15px 16px;
+  outline: none;
+}
+
+input::placeholder {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+textarea {
+  background-color: #fbf8f7;
+}
+
+textarea::placeholder {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 500;
+}
+
+.submit {
+  align-self: center;
 }
