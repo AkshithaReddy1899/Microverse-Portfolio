@@ -535,8 +535,7 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-  /* NAV */
-  
+  /* NAV */  
   .menu-container {
     display: none;
   }
@@ -674,7 +673,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "grid-1 grid-2 grid-3"
       "grid-4 grid-5 grid-6";
     position: relative;
