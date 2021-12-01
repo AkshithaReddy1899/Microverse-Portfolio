@@ -535,7 +535,7 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-  
+
   .menu-container {
     display: none;
   }
@@ -560,8 +560,6 @@ footer {
     line-height: 20px;
     color: #fff;
   }
-
-  /* main */
 
   main {
     flex-direction: row-reverse;
@@ -666,6 +664,7 @@ footer {
   .grid-btn {
     display: none;
   }
+
   .work-grid-container {
     padding-top: 80px;
     display: grid;
