@@ -3,10 +3,10 @@
   --main-background: #1c1a19;
   --font-color-1: #fff;
   --font-color-2: #ff6b00;
-  --font-round: 'Crete Round', serif;
-  --font-poppins: 'Poppins', sans-serif;
-  --font-roboto: 'Roboto', sans-serif;
-  --font-inter: 'Inter', sans-serif;
+  --font-round: "Crete Round", serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 /* General styling */
@@ -113,7 +113,7 @@ main {
   width: 150px;
   height: 320px;
   background-repeat: no-repeat;
-  background-image: url('./assest/Illustration.svg');
+  background-image: url("./assest/Illustration.svg");
   position: absolute;
   bottom: 0;
   right: 0;
@@ -415,4 +415,76 @@ main {
   line-height: 43px;
   color: #fff;
   margin: 20px auto;
+}
+
+/* Contact-me section */
+.footer {
+  background-color: var(--font-color-1);
+  padding: 0 24px;
+}
+
+.contact-description {
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin: 24px 0;
+  font-family: var(--font-inter);
+  padding-top: 120px;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+input,
+textarea {
+  margin: 20px 0;
+  border: 0;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 15px 16px;
+  outline: none;
+}
+
+input::placeholder {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+textarea {
+  background-color: #fbf8f7;
+  border: none;
+}
+
+textarea::placeholder {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+
+.submit {
+  align-self: center;
+}
+
+.form-line {
+  margin: 20px 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.form-icons-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
 }
