@@ -436,11 +436,14 @@ main {
   margin: 24px 0px;
   font-family: var(--font-inter);
   padding-top: 120px;
+  font-weight: 700;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 100px;
 }
 
 input,
@@ -463,6 +466,7 @@ input::placeholder {
 
 textarea {
   background-color: #fbf8f7;
+  border: none;
 }
 
 textarea::placeholder {
@@ -471,10 +475,22 @@ textarea::placeholder {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #000;
+  color: #3c3a39;
   font-weight: 500;
 }
 
 .submit {
   align-self: center;
+}
+
+.form-line {
+  margin: 20px 0 10px 0;
+  border: none;
+  border-bottom: 1px solid #DFE1E6;
+}
+
+.form-icons-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
 }

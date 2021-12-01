@@ -303,12 +303,11 @@
           to chat please get in touch.
         </p>
       </div>
-      <form action="" method="post">
-        <input type="text" placeholder="Full name" maxlength="30" required />
-        <input type="email" placeholder="Email address" required />
+      <form action="https://formspree.io/f/xknywqjb" method="POST">
+        <input type="text" placeholder="Full name" minlength="2" maxlength="30" name="name" required />
+        <input type="email" placeholder="Email address" name="email" required />
         <textarea
-          name=""
-          id=""
+          name="msg"
           cols="30"
           rows="10"
           placeholder="Enter text here"
@@ -317,7 +316,16 @@
         <button class="project-btn submit">Get in touch</button>
       </form>
 
-      <hr />
+      <hr class="form-line">
+
+      <ul class="form-icons-container">
+        <li><a href="#"><img src="./assest/icon-dark-1.png" alt="github" class="main-icon"></a></li>
+        <li><a href="#"><img src="./assest/icon-dark-2.png" alt="in" class="main-icon"></a></li>
+        <li><a href="#"><img src="./assest/icon-dark-3.png" alt="icon-3" class="main-icon"></a></li>
+        <li><a href="#"><img src="./assest/icon-dark-4.png" alt="icon-4" class="main-icon"></a></li>
+        <li><a href="#"><img src="./assest/icon-dark-5.png" alt="m" class="main-icon"></a></li>
+    </ul>
+
     </footer>
   </body>
 </html>
