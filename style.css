@@ -224,12 +224,7 @@ main {
   margin: 50px auto 0 auto;
   width: 86%;
   height: 368px;
-  background: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url(image_processing20200427-30692-7af91d.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(image_processing20200427-30692-7af91d.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,7 +428,7 @@ main {
   line-height: 44px;
   text-align: center;
   color: #172b4d;
-  margin: 24px 0px;
+  margin: 24px 0;
   font-family: var(--font-inter);
   padding-top: 120px;
   font-weight: 700;
@@ -476,7 +471,6 @@ textarea::placeholder {
   font-size: 15px;
   line-height: 24px;
   color: #3c3a39;
-  font-weight: 500;
 }
 
 .submit {
@@ -486,7 +480,7 @@ textarea::placeholder {
 .form-line {
   margin: 20px 0 10px 0;
   border: none;
-  border-bottom: 1px solid #DFE1E6;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .form-icons-container {
