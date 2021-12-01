@@ -518,7 +518,7 @@ textarea::placeholder {
 }
 
 .form-line {
-  margin:0;
+  margin: 0;
   border: none;
   border-bottom: 1px solid #dfe1e6;
 }
@@ -529,18 +529,18 @@ textarea::placeholder {
   padding: 10px;
 }
 
-footer{
+footer {
   background: var(--font-color-1);
 }
-
 
 @media screen and (min-width: 1000px) {
 
   /* NAV */
+  
   .menu-container {
   display: none;
   }
-  
+
   .nav-elements,
   .mail {
     display: block;
@@ -563,7 +563,7 @@ footer{
     color: #fff;
   }
 
-/* main */
+  /* main */
 
   main {
     flex-direction: row-reverse;
@@ -575,7 +575,7 @@ footer{
 
   .home-page {
     width: 550px;
-    padding: 0 15px; 
+    padding: 0 15px;
   }
 
   .header {
@@ -671,12 +671,12 @@ footer{
   
   .work-grid-container {
     padding-top: 80px;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "grid-1 grid-2 grid-3"
-    "grid-4 grid-5 grid-6"; 
+      "grid-1 grid-2 grid-3"
+      "grid-4 grid-5 grid-6";
     position: relative;
   }
 
@@ -701,7 +701,7 @@ footer{
   }
 
   .grid-4 {
-    grid-area:  grid-4;
+    grid-area: grid-4;
   }
 
   .grid-5 {
