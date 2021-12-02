@@ -636,11 +636,12 @@ footer {
   }
 
   .work hr {
-    width: 790px;
+    width: 60%;
     border: none;
     border-bottom: 1px solid #212121;
     margin-top: -24px;
-    margin-right: 80px;
+    float: right;
+    margin-right: 40px;
   }
 
   .work-main-grid {
