@@ -49,7 +49,7 @@ nav {
 }
 
 nav:hover {
-  animation: slide-left .5s linear;
+  animation: slide-left 0.5s linear;
   animation-fill-mode: forwards;
 }
 
@@ -57,6 +57,7 @@ nav:hover {
   0% {
     background-position: right;
   }
+
   100% {
     background-position: left;
   }
@@ -92,6 +93,7 @@ main {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
