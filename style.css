@@ -196,7 +196,7 @@ main {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .lang-list {
@@ -225,6 +225,9 @@ main {
   margin-left: 0;
   width: 124px;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--font-color-2);
 }
 
@@ -270,7 +273,7 @@ main {
 .grid-lang-list {
   background: rgba(255, 255, 255, 0.24);
   color: var(--font-color-1);
-  margin: 23px 12px;
+  margin: 0 15px;
 }
 
 .grid-btn {
@@ -287,7 +290,8 @@ main {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  margin: 0;
+  position: relative;
+  margin: 320px 0 0 0;
   letter-spacing: 0.03em;
   color: var(--font-color-1);
 }
@@ -296,14 +300,13 @@ main {
 
 .grid-1 {
   grid-area: grid-1;
-  background: url('./assest/ImgPlaceholder1.png');
 }
 
 .grid-project1,
 .grid-project4 {
-  padding-top: 60px;
+  padding-top: 20px;
   width: 300px;
-  height: 380px;
+  height: 360px;
   position: absolute;
   background: url('./assest/project-placeholder.png');
 }
@@ -314,9 +317,9 @@ main {
 
 .grid-project2,
 .grid-project5 {
-  padding-top: 60px;
+  padding-top: 20px;
   width: 300px;
-  height: 380px;
+  height: 360px;
   position: absolute;
   background: url('./assest/ImgPlaceholder2.png');
 }
@@ -327,9 +330,9 @@ main {
 
 .grid-project3,
 .grid-project6 {
-  padding-top: 60px;
+  padding-top: 20px;
   width: 300px;
-  height: 380px;
+  height: 360px;
   position: absolute;
   background: url('./assest/ImgPlaceholder3.png');
 }
@@ -535,6 +538,12 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+  nav{
+    justify-content: space-between;
+    padding: 7px 150px 0 150px;
+    margin: 0;
+  }
+
   .menu-container {
     display: none;
   }
@@ -547,7 +556,7 @@ footer {
   .nav-elements {
     display: flex;
     flex-direction: row;
-    margin-right: 40px;
+    margin: 0;
   }
 
   .nav-list {
@@ -636,6 +645,7 @@ footer {
 
   .work-main-grid {
     display: flex;
+    margin-top: 100px;
   }
 
   .work-project-display img {
@@ -658,12 +668,16 @@ footer {
   }
 
   .lang-list-ul {
-    margin: 24px -10px;
+    margin: 24px 0;
+  }
+
+  .lang-list {
+    margin: 5px;
   }
 
   .grid-btn {
     display: none;
-  }
+  }  
 
   .work-grid-container {
     padding-top: 80px;
@@ -676,6 +690,24 @@ footer {
     position: relative;
   }
 
+  .grid-project-container:hover {
+    border: 2px solid black;
+  }
+
+  .grid-project-container:hover .grid-project {
+    display: none;
+  }
+
+  .grid-project-container:hover .grid-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .grid-btn {
+    margin-bottom: 8px;
+  }
+
   .grid-project1 {
     position: absolute;
     background: url('./assest/project-placeholder.png');
@@ -686,29 +718,44 @@ footer {
   .grid-1 {
     grid-area: grid-1;
     background: url('./assest/ImgPlaceholder1.png');
+    height: 360px;
   }
 
   .grid-2 {
+    height: 360px;
     grid-area: grid-2;
+    background: url('./assest/ImgPlaceholder2.png');
   }
 
   .grid-3 {
+    height: 360px;
     grid-area: grid-3;
+    background: url('./assest/ImgPlaceholder3.png');
   }
 
   .grid-4 {
+    height: 360px;
     grid-area: grid-4;
+    background: url('./assest/ImgPlaceholder1.png')
   }
 
   .grid-5 {
+    height: 360px;
     grid-area: grid-5;
+    background: url('./assest/ImgPlaceholder2.png');
   }
 
   .grid-6 {
+    height: 360px;
     grid-area: grid-6;
+    background: url('./assest/ImgPlaceholder3.png');
   }
 
   /* ABOUT SECTION */
+
+  .about {
+    padding: 5px 0 1px 142px;
+  }
 
   .about-section {
     padding-top: 100px;
@@ -724,12 +771,15 @@ footer {
 
   .about-header {
     text-align: left;
+    font-size: 72px;
     margin: 120px 0 0 50px;
   }
 
   .about-description {
     width: 570px;
-    margin: 20px 0 0 50px;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 24px 100px 0 50px;
   }
 
   .about-btn {
@@ -750,12 +800,24 @@ footer {
     float: right;
   }
 
+  .about-line {
+    margin-right: 142px;
+  }
+
   /* SKILLS */
 
   .skills {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     text-align: left;
+  }
+  
+  .skills {
+  text-align: left;
+  }
+  
+  .skills-lang {
+    margin: 0 200px 150px 0;
   }
 
   /* CONTACT */
@@ -766,16 +828,35 @@ footer {
   }
 
   .contact-description {
-    width: 450px;
+    width: 455px;
+    height: 256px;
+    font-family: var(--font-inter);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    color: #262626;
+    margin: 24px 0;
   }
 
   form {
-    width: 550px;
+    padding-top: 100px;
+    width: 680px;
+    padding-left: -70px;
+  }
+
+  textarea {
+    height: 110px;
   }
 
   .form-line {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     background: #fff;
+  }
+  
+  .submit {
+    align-self: flex-start;
   }
 }
