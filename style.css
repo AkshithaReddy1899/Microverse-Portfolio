@@ -36,7 +36,8 @@ body {
 /* Nav styling */
 
 nav {
-  background-color: var(--nav-background);
+  background: linear-gradient(to left, var(--nav-background) 50%, var(--main-background) 50%) right;
+  background-size: 200%;
   color: var(--font-color-1);
   display: flex;
   justify-content: space-between;
@@ -45,6 +46,20 @@ nav {
   font-family: var(--font-roboto);
   font-weight: 700;
   font-size: 18px;
+}
+
+nav:hover {
+  animation: slide-left .5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-left {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 
 .nav-elements {
