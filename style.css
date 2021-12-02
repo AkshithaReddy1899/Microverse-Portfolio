@@ -273,7 +273,7 @@ main {
 .grid-lang-list {
   background: rgba(255, 255, 255, 0.24);
   color: var(--font-color-1);
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 .grid-btn {
