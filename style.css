@@ -538,7 +538,7 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-  nav{
+  nav {
     justify-content: space-between;
     padding: 7px 150px 0 150px;
     margin: 0;
@@ -677,7 +677,7 @@ footer {
 
   .grid-btn {
     display: none;
-  }  
+  }
 
   .work-grid-container {
     padding-top: 80px;
@@ -688,6 +688,10 @@ footer {
       "grid-1 grid-2 grid-3"
       "grid-4 grid-5 grid-6";
     position: relative;
+  }
+
+  .grid-btn {
+    margin-bottom: 8px;
   }
 
   .grid-project-container:hover {
@@ -702,10 +706,6 @@ footer {
     display: block;
     text-align: center;
     padding: 10px;
-  }
-
-  .grid-btn {
-    margin-bottom: 8px;
   }
 
   .grid-project1 {
@@ -736,7 +736,7 @@ footer {
   .grid-4 {
     height: 360px;
     grid-area: grid-4;
-    background: url('./assest/ImgPlaceholder1.png')
+    background: url('./assest/ImgPlaceholder1.png');
   }
 
   .grid-5 {
@@ -811,11 +811,7 @@ footer {
     justify-content: start;
     text-align: left;
   }
-  
-  .skills {
-  text-align: left;
-  }
-  
+
   .skills-lang {
     margin: 0 200px 150px 0;
   }
@@ -855,7 +851,7 @@ footer {
     margin: 0;
     background: #fff;
   }
-  
+
   .submit {
     align-self: flex-start;
   }
