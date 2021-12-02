@@ -677,6 +677,7 @@ footer {
 
   .grid-btn {
     display: none;
+    margin-bottom: 8px;
   }
 
   .work-grid-container {
@@ -688,10 +689,6 @@ footer {
       "grid-1 grid-2 grid-3"
       "grid-4 grid-5 grid-6";
     position: relative;
-  }
-
-  .grid-btn {
-    margin-bottom: 8px;
   }
 
   .grid-project-container:hover {
