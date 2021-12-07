@@ -19,18 +19,58 @@
   padding: 0;
 }
 
+body {
+  background-color: var(--main-background);
+  color: var(--font-color-1);
+  font-family: var(--font-inter);
+  font-weight: normal;
+  font-size: normal;
+}
+
 a {
   text-decoration: none;
   color: var(--font-color-1);
 }
 
-li {
-  list-style: none;
+.btn {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--font-color-2);
 }
 
-body {
-  background-color: var(--main-background);
+/* button hover */
+
+.btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.btn:active {
+  background: #e05304;
   color: var(--font-color-1);
+}
+
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #F55800;
+}
+
+li {
+  list-style: none;
 }
 
 /* Nav styling */
@@ -38,7 +78,6 @@ body {
 nav {
   background: linear-gradient(to left, var(--nav-background) 50%, var(--main-background) 50%) right;
   background-size: 200%;
-  color: var(--font-color-1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -104,7 +143,6 @@ main {
   color: var(--font-color-2);
   font-weight: 400;
   font-size: 56px;
-  text-align: left;
   line-height: 64px;
   letter-spacing: 0.37px;
   margin: 10px 0;
@@ -143,7 +181,7 @@ main {
   width: 150px;
   height: 320px;
   background-repeat: no-repeat;
-  background-image: url("./assest/Illustration.svg");
+  background-image: url("../assest/Illustration.svg");
   position: absolute;
   bottom: 0;
   right: 0;
@@ -161,8 +199,8 @@ main {
   text-align: center;
   font-family: var(--font-round);
   font-size: 40px;
-  line-height: 52px;
   font-weight: normal;
+  line-height: 52px;
 }
 
 .work hr {
@@ -227,7 +265,6 @@ main {
 }
 
 .lang-list {
-  font-family: var(--font-inter);
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -239,23 +276,9 @@ main {
 }
 
 .project-btn {
-  color: var(--font-color-1);
-  border: none;
-  outline: none;
-  font-family: var(--font-inter);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   margin-top: 10px;
   margin-left: 0;
   width: 124px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--font-color-2);
 }
 
 /* General Grid Styling */
@@ -287,7 +310,6 @@ main {
 }
 
 .grid-project-description {
-  font-family: var(--font-inter);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -298,25 +320,13 @@ main {
 }
 
 .grid-lang-list {
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(170, 170, 170, 0.24);
   color: var(--font-color-1);
   margin: 0 5px;
 }
 
 .grid-btn {
-  background: var(--font-color-2);
-  border: none;
-  outline: none;
   width: 100%;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-inter);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
   position: relative;
   margin: 320px 0 0 0;
   letter-spacing: 0.03em;
@@ -325,43 +335,38 @@ main {
 
 /* GRID 1 */
 
-.grid-1 {
-  grid-area: grid-1;
-}
-
-.grid-project1,
-.grid-project4 {
+.grid-project {
   padding-top: 20px;
   width: 300px;
   height: 360px;
   position: absolute;
-  background: url("./assest/project-placeholder.png");
+}
+
+.grid-project1,
+.grid-project4 {
+  background: url("../assest/project-placeholder.png");
+}
+
+.grid-project2,
+.grid-project5 {
+  background: url("../assest/ImgPlaceholder2.png");
+}
+
+.grid-project3,
+.grid-project6 {
+  background: url("../assest/ImgPlaceholder3.png");
+}
+
+.grid-1 {
+  grid-area: grid-1;
 }
 
 .grid-2 {
   grid-area: grid-2;
 }
 
-.grid-project2,
-.grid-project5 {
-  padding-top: 20px;
-  width: 300px;
-  height: 360px;
-  position: absolute;
-  background: url("./assest/ImgPlaceholder2.png");
-}
-
 .grid-3 {
   grid-area: grid-3;
-}
-
-.grid-project3,
-.grid-project6 {
-  padding-top: 20px;
-  width: 300px;
-  height: 360px;
-  position: absolute;
-  background: url("./assest/ImgPlaceholder3.png");
 }
 
 .grid-4 {
@@ -374,27 +379,6 @@ main {
 
 .grid-6 {
   grid-area: grid-6;
-}
-
-/* grid button hover */
-
-.grid-btn:hover,
-.project-btn:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-}
-
-.grid-btn:active,
-.project-btn:active {
-  background: #e05304;
-  color: var(--font-color-1);
-}
-
-.grid-btn:disabled,
-.project-btn:disabled {
-  background: #f4f1f0;
-  color: #5b5957;
 }
 
 /* About Section */
@@ -415,31 +399,16 @@ main {
 }
 
 .about-description {
-  font-family: var(--font-inter);
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #f4f5f7;
   margin: 20px;
   text-align: left;
 }
 
 .about-btn {
-  font-family: var(--font-inter);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-  border: none;
-  outline: none;
   padding: 10px;
-  background: var(--font-color-2);
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -469,26 +438,23 @@ main {
 }
 
 .skill-lang-header {
-  font-family: var(--font-inter);
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
-  color: #fff;
   margin: 0 12px;
 }
 
 .skill-lang-li {
-  font-family: var(--font-inter);
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 43px;
-  color: #fff;
   margin: 20px auto;
 }
 
 /* Contact-me section */
+
 .contact {
   background-color: var(--font-color-1);
   padding: 0 24px;
@@ -500,7 +466,6 @@ main {
   text-align: center;
   color: #172b4d;
   margin: 24px 0;
-  font-family: var(--font-inter);
   padding-top: 120px;
   font-weight: 700;
 }
@@ -522,7 +487,6 @@ textarea {
 }
 
 input::placeholder {
-  font-family: var(--font-inter);
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -541,7 +505,7 @@ textarea::placeholder {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #3c3a39;
+  color: #8b8686;
 }
 
 .submit {
@@ -589,12 +553,10 @@ footer {
   .nav-list {
     margin-left: 20px;
     padding: 10px;
-    font-family: var(--font-inter);
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-    color: #fff;
   }
 
   main {
@@ -617,14 +579,12 @@ footer {
   }
 
   .description-heading {
-    font-family: var(--font-inter);
     font-size: 32px;
     line-height: 44px;
     margin: 24px 0;
   }
 
   .description-para {
-    font-family: var(--font-inter);
     font-weight: normal;
     font-size: 20px;
     line-height: 32px;
@@ -646,7 +606,7 @@ footer {
     height: 710px;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("./assest/Illustration-header.png");
+    background-image: url("../assest/Illustration-header.png");
     position: absolute;
     right: 0;
     top: 10%;
@@ -705,7 +665,7 @@ footer {
 
   .grid-btn {
     display: none;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 
   .work-grid-container {
@@ -719,8 +679,13 @@ footer {
     position: relative;
   }
 
+  .grid-project-container {
+    height: 360px;
+  }
+
   .grid-project-container:hover {
-    border: 2px solid black;
+    border: 2px solid rgb(119, 116, 116);
+    background: url('../assest/ImgPlaceholder2.png');
   }
 
   .grid-project-container:hover .grid-project {
@@ -733,47 +698,30 @@ footer {
     padding: 10px;
   }
 
-  .grid-project1 {
-    position: absolute;
-    background: url("./assest/project-placeholder.png");
-  }
-
   /* GRID */
 
   .grid-1 {
     grid-area: grid-1;
-    background: url("./assest/ImgPlaceholder1.png");
-    height: 360px;
   }
 
   .grid-2 {
-    height: 360px;
     grid-area: grid-2;
-    background: url("./assest/ImgPlaceholder2.png");
   }
 
   .grid-3 {
-    height: 360px;
     grid-area: grid-3;
-    background: url("./assest/ImgPlaceholder3.png");
   }
 
   .grid-4 {
-    height: 360px;
     grid-area: grid-4;
-    background: url("./assest/ImgPlaceholder1.png");
   }
 
   .grid-5 {
-    height: 360px;
     grid-area: grid-5;
-    background: url("./assest/ImgPlaceholder2.png");
   }
 
   .grid-6 {
-    height: 360px;
     grid-area: grid-6;
-    background: url("./assest/ImgPlaceholder3.png");
   }
 
   /* ABOUT SECTION */
@@ -819,7 +767,7 @@ footer {
   .about-illustration {
     width: 700px;
     height: 550px;
-    background: url("./assest/illustration-about-me.svg");
+    background: url("../assest/illustration-about-me.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     float: right;
@@ -851,13 +799,11 @@ footer {
   .contact-description {
     width: 455px;
     height: 256px;
-    font-family: var(--font-inter);
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 52px;
     text-align: left;
-    color: #262626;
     margin: 24px 0;
   }
 
