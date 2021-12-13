@@ -1,16 +1,12 @@
-const menu = document.querySelector('.nav-elements');
-const navList = document.querySelector('.nav-list');
-const menuItem = document.querySelector('.menu-container');
-const line = document.querySelector('.line');
+let menu = document.getElementById('nav-elements');
+let main = document.getElementById('main');
 
-function toggleMenu() {
-  if (menu.classList.contains('showMenu')) {
-    menu.classList.remove('showMenu');
-    menu.style.display = 'none';
+function toggleMenu(){ 
+let checkBox = document.getElementById("toggler");
+
+  if (checkBox.checked === true){
+    menu.style.opacity = "1";
   } else {
-    menu.classList.add('showMenu');
-    menu.style.display = 'block';
+    menu.style.opacity = "0";
   }
 }
-
-menuItem.addEventListener('click', toggleMenu);
