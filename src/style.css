@@ -33,7 +33,6 @@ a {
 .btn {
   font-weight: bold;
   font-size: 17px;
-  /*line-height: 24px; */
   letter-spacing: 0.03em;
   height: 48px;
   display: flex;
@@ -187,8 +186,8 @@ nav:hover {
   transform: rotate(135deg);
 }
 
-.menu-container .toggler:checked + .menu-icon > .line:before,
-.menu-container .toggler:checked + .menu-icon > .line:after {
+.menu-container .toggler:checked + .menu-icon > .line::before,
+.menu-container .toggler:checked + .menu-icon > .line::after {
   top: 0;
   transform: rotate(90deg);
 }
@@ -887,7 +886,8 @@ footer {
     padding-left: -70px;
   }
 
-  input, textarea {
+  input,
+textarea {
     width: 100%;
   }
 

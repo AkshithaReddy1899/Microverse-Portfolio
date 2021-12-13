@@ -8,9 +8,9 @@
   --font-roboto: "Roboto", sans-serif;
   --font-inter: "Inter", sans-serif;
 }
-  
+
 /* General styling */
-  
+
 *,
 ::after,
 ::before {
@@ -18,23 +18,22 @@
   margin: 0;
   padding: 0;
 }
-  
+
 body {
   background-color: var(--main-background);
   color: var(--font-color-1);
   font-family: var(--font-inter);
   font-weight: normal;
 }
-  
+
 a {
   text-decoration: none;
   color: var(--font-color-1);
 }
-  
+
 .btn {
   font-weight: bold;
   font-size: 17px;
-/*line-height: 24px; */
   letter-spacing: 0.03em;
   height: 48px;
   display: flex;
@@ -44,44 +43,46 @@ a {
 }
   
 /* button hover */
-  
+
 .btn:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
 }
-  
+
 .btn:active {
   background: #e05304;
   color: var(--font-color-1);
 }
-  
+
 .btn:disabled {
   background: #f4f1f0;
   color: #5b5957;
 }
-  
+
 button {
   border: none;
   outline: none;
   color: #fff;
   background: #f55800;
 }
-  
+
 li {
   list-style: none;
 }
-  
+
 .header {
   font-family: var(--font-round);
   color: var(--font-color-2);
   font-weight: 400;
   font-size: 56px;
+
 /*    line-height: 64px;*/
+
   letter-spacing: 0.37px;
   margin: 10px 0;
 }
-  
+
 /* Nav styling */
   
 nav {
@@ -96,17 +97,17 @@ nav {
   font-size: 18px;
   height: 60px;
 }
-  
+ 
 nav:hover {
   animation: slide-left 0.5s linear;
   animation-fill-mode: forwards;
 }
-  
+
 @keyframes slide-left {
   0% {
     background-position: right;
   }
-  
+
   100% {
     background-position: left;
   }
@@ -115,7 +116,7 @@ nav:hover {
 .nav-elements {
   display: none;
 }
-  
+
 /* menu */
 .menu-container {
   position: absolute;
@@ -181,8 +182,8 @@ nav:hover {
   transform: rotate(135deg);
 }
 
-.menu-container .toggler:checked + .menu-icon > .line:before,
-.menu-container .toggler:checked + .menu-icon > .line:after {
+.menu-container .toggler:checked + .menu-icon > .line::before,
+.menu-container .toggler:checked + .menu-icon > .line::after {
   top: 0;
   transform: rotate(90deg);
 }
@@ -220,7 +221,7 @@ nav:hover {
 }
 
 /* main */
-  
+
 main {
   height: 95vh;
   display: flex;
@@ -230,9 +231,10 @@ main {
   padding: 0 20px;
   opacity: 1;
 }
-  
+
 .home-page {
   padding: 0 15px;
+
   /* animation: appears 5s; */
 }
   
@@ -245,7 +247,7 @@ main {
     opacity: 1;
   }
 }
-  
+
 .description-heading {
   font-family: var(--font-roboto);
   font-weight: bold;
@@ -255,7 +257,7 @@ main {
   align-items: center;
   margin: 12px 0;
 }
-  
+
 .description-para {
   font-family: var(--font-poppins);
   font-weight: 400;
@@ -263,18 +265,18 @@ main {
   line-height: 24px;
   margin: 12px 0;
 }
-  
+
 .icons-container {
   margin-top: 10px;
   text-align: left;
   margin-left: -120px;
   display: flex;
 }
-  
+
 .main-icon {
   margin: 10px;
 }
-  
+
 .illustration-container {
   width: 150px;
   height: 320px;
@@ -284,15 +286,15 @@ main {
   bottom: 0;
   right: 0;
 }
-  
+
 /* WORK SECTION */
-  
+
 .work {
   background: var(--font-color-1);
   color: var(--main-background);
   padding: 100px 0;
 }
-  
+
 .work-header {
   text-align: center;
   font-family: var(--font-round);
@@ -300,18 +302,18 @@ main {
   font-weight: normal;
   line-height: 52px;
 }
-  
+
 .work hr {
   width: 84%;
   border: none;
   border-bottom: 1px solid #212121;
   margin: 24px auto;
 }
-  
+
 .work-project-display {
   text-align: center;
 }
-  
+
 .work-grid {
   display: grid;
   justify-items: center;
@@ -327,19 +329,19 @@ main {
     ". grid-5 ."
     ". grid-6 .";
 }
-  
+
 /* MAIN GRID */
-  
+
 .work-project-description {
   margin: 1px 25px;
   text-align: left;
 }
-  
+
 .work-project-description li {
   margin-left: -17px;
   margin-right: 30px;
 }
-  
+
 .work-project-header {
   font-family: var(--font-round);
   font-weight: normal;
@@ -347,7 +349,7 @@ main {
   line-height: 44px;
   margin: 12px 0;
 }
-  
+
 .lang-list-ul {
   display: flex;
   flex-direction: row;
@@ -355,7 +357,7 @@ main {
   align-items: center;
   padding-left: 15px;
 }
-  
+
 .lang-list {
   font-weight: 500;
   font-size: 15px;
@@ -365,19 +367,19 @@ main {
   border: 1px solid #8993a4;
   padding: 10px;
 }
-  
+
 .project-btn {
   margin-top: 10px;
   margin-left: 0;
   width: 124px;
 }
-  
+
 /* General Grid Styling */
-  
+
 .work-grid-container {
   position: relative;
 }
-  
+
 .grid-project-container {
   margin: 80px auto 0 auto;
   width: 300px;
@@ -388,7 +390,7 @@ main {
   text-align: left;
   flex-direction: column;
 }
-  
+
 .grid-project-header {
   font-family: var(--font-round);
   font-weight: normal;
@@ -407,13 +409,13 @@ main {
   padding: 0 20px;
   color: var(--font-color-1);
 }
-  
+
 .grid-lang-list {
   background: rgba(170, 170, 170, 0.24);
   color: var(--font-color-1);
   margin: 0 5px;
 }
-  
+
 .grid-btn {
   width: 100%;
   position: relative;
@@ -433,12 +435,12 @@ main {
 .grid-project4 {
   background: url("../assest/project-placeholder.png");
 }
-  
+
 .grid-project2,
 .grid-project5 {
   background: url("../assest/ImgPlaceholder2.png");
 }
-  
+
 .grid-project3,
 .grid-project6 {
   background: url("../assest/ImgPlaceholder3.png");
@@ -459,6 +461,7 @@ main {
 .grid-4 {
   grid-area: grid-4;
 }
+
 .grid-5 {
   grid-area: grid-5;
 }
@@ -466,8 +469,9 @@ main {
 .grid-6 {
   grid-area: grid-6;
 }
+
 /* About Section */
-  
+
 .about {
   text-align: center;
 }
@@ -505,7 +509,7 @@ main {
 }
 
 /* SKILLS */
-  
+
 .skills {
   text-align: center;
   margin-top: 100px;
@@ -710,6 +714,7 @@ footer {
     display: flex;
     margin-top: 100px;
   }
+
   .work-project-display img {
     width: 680px;
   }
@@ -773,7 +778,7 @@ footer {
   }
 
   /* ABOUT SECTION */
-  
+
   .about {
     padding: 5px 0 1px 142px;
   }
@@ -836,14 +841,14 @@ footer {
   .skills-lang {
     margin: 0 200px 150px 0;
   }
-  
+
   /* CONTACT */
-  
+
   .contact {
     display: flex;
     justify-content: space-around;
   }
-  
+
   .contact-description {
     width: 455px;
     height: 256px;
@@ -860,16 +865,17 @@ footer {
     padding-left: -70px;
   }
   
-  input, textarea {
+  input,
+  textarea {
     width: 100%;
   }
-  
+
   textarea {
     height: 110px;
   }
 
   .form-line {
-   width: 100%;
+    width: 100%;
     margin: 0;
     background: #fff;
   }
@@ -878,11 +884,11 @@ footer {
     align-self: flex-start;
   }
 }
-  
+
 .bounce:hover {
   animation: bounce 2s;
 }
-  
+
 @keyframes bounce {
   0%,
   20%,
@@ -891,20 +897,18 @@ footer {
   100% {
     transform: translateY(0);
   }
-  
   40% {
     transform: translateY(-10px);
   }
-  
   60% {
     transform: translateY(-5px);
   }
 }
-  
+
 .bounce-icon:hover {
   animation: bounceicon 3s;
 }
-  
+
 @keyframes bounceicon {
   0%,
   20%,
@@ -913,13 +917,10 @@ footer {
   100% {
     transform: translateY(0);
   }
-  
   40% {
     transform: translateY(-10px);
   }
-  
   60% {
     transform: translateY(-10px);
   }
 }
-  

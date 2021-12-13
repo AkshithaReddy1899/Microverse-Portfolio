@@ -1,12 +1,11 @@
-let menu = document.getElementById('nav-elements');
-let main = document.getElementById('main');
+const menu = document.getElementById('nav-elements');
 
-function toggleMenu(){ 
-let checkBox = document.getElementById("toggler");
+function toggleMenu() {
+  const checkBox = document.getElementById("toggler");
 
-  if (checkBox.checked === true){
-    menu.style.opacity = "1";
+  if (checkBox.checked === true) {
+    menu.style.opacity = 1;
   } else {
-    menu.style.opacity = "0";
+    menu.style.opacity = 0;
   }
 }
