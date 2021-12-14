@@ -18,8 +18,6 @@ function togglerMenu() {
 
 const navItems = document.querySelectorAll('.mobile-nav-list');
 
-navItems.forEach(
-  function (navItems) {
-    navItems.addEventListener('click', togglerMenu);
-  }
-);
+navItems.forEach(element => {
+  element.addEventListener('click', togglerMenu);
+});
