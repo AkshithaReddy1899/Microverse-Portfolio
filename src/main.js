@@ -1,4 +1,4 @@
-const menu = document.getElementById('nav-elements);
+const menu = document.getElementById('nav-elements');
 
 const checkBox = document.getElementById('toggler');
 
