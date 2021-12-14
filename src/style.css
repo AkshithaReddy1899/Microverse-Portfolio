@@ -613,6 +613,11 @@ footer {
     padding: 0 20px;
     height: 110vh;
   }
+  
+  .home-page {
+    width: 550px;
+    padding: 0 15px;
+  }
 
   .header {
     font-size: 72px;
@@ -838,63 +843,64 @@ footer {
     align-self: flex-start;
   }
 }
-  /* Animations 
-  .home-page {
-    width: 550px;
-    padding: 0 15px;
-    -webkit-animation: appears 5s;
-    animation: appears 5s;
+
+/* 
+
+Animations
+
+.home-page {
+  width: 550px;
+  padding: 0 15px;
+  -webkit-animation: appears 5s;
+  animation: appears 5s;
+}
+
+@-webkit-keyframes appears {
+  from {
+    opacity: 0;
   }
-
-  
-  @-webkit-keyframes appears {
-    from {
-      opacity: 0;
-    }
     
-    to {
-      opacity: 1;
-    }
-  } 
-
-  @keyframes appears {
-    from {
-      opacity: 0;
-    }
-    
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
-  nav:hover {
-    -webkit-animation: slide-left 0.5s linear;
-    animation: slide-left 0.5s linear;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+} 
+
+@keyframes appears {
+  from {
+    opacity: 0;
   }
-
-  /*
-  @-webkit-keyframes slide-left {
-    0% {
-      background-position: right;
-    }
     
-    100% {
-      background-position: left;
-    }
-  } 
+  to {
+    opacity: 1;
+  }
+}
+nav:hover {
+  -webkit-animation: slide-left 0.5s linear;
+  animation: slide-left 0.5s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
 
-  @keyframes slide-left {
-    0% {
-      background-position: right;
-    }
+@-webkit-keyframes slide-left {
+  0% {
+    background-position: right;
+  }
     
-    100% {
-      background-position: left;
-    }
-  } */
+  100% {
+    background-position: left;
+  }
+} 
 
-/*
+@keyframes slide-left {
+  0% {
+    background-position: right;
+  }
+    
+  100% {
+    background-position: left;
+  }
+} 
+
 .bounce:hover {
   -webkit-animation: bounce 2s;
   animation: bounce 2s;
@@ -976,5 +982,5 @@ footer {
   60% {
     transform: translateY(-10px);
   }
-} */
-
+}
+ */
