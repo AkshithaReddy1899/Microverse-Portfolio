@@ -76,9 +76,6 @@ li {
   color: var(--font-color-2);
   font-weight: 400;
   font-size: 56px;
-
-/*    line-height: 64px;*/
-
   letter-spacing: 0.37px;
   margin: 10px 0;
 }
@@ -96,21 +93,6 @@ nav {
   font-weight: 700;
   font-size: 18px;
   height: 60px;
-}
- 
-nav:hover {
-  animation: slide-left 0.5s linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes slide-left {
-  0% {
-    background-position: right;
-  }
-
-  100% {
-    background-position: left;
-  }
 }
 
 .nav-elements {
@@ -199,7 +181,6 @@ nav:hover {
   top: 9%;
   width: 100vw;
   height: 90vh;
-  padding-top: 0px;
   display: block;
   opacity: 0;
   padding-top: 60px;
@@ -207,17 +188,12 @@ nav:hover {
 
 .mobile-nav-list {
   color: #fff5e1;
-  margin: 20px 0;
+  margin: 20px 30px;
   font-size: 1.4rem;
-  padding-left: 30px;
-}
-
-.nav-line {
-  background: none;
+  padding: 20px 0 15px 30px;
+  border: 1px solid red;
   border: none;
   border-bottom: 1px solid #fff5e1;
-  width: 90%;
-  margin: 1px auto;
 }
 
 /* main */
@@ -234,25 +210,12 @@ main {
 
 .home-page {
   padding: 0 15px;
-
-  /* animation: appears 5s; */
-}
-  
-@keyframes appears {
-  from {
-    opacity: 0;
-  }
-  
-  to {
-    opacity: 1;
-  }
 }
 
 .description-heading {
   font-family: var(--font-roboto);
   font-weight: bold;
   font-size: 24px;
-  line-height: 32px;
   display: flex;
   align-items: center;
   margin: 12px 0;
@@ -300,7 +263,6 @@ main {
   font-family: var(--font-round);
   font-size: 40px;
   font-weight: normal;
-  line-height: 52px;
 }
 
 .work hr {
@@ -346,7 +308,6 @@ main {
   font-family: var(--font-round);
   font-weight: normal;
   font-size: 32px;
-  line-height: 44px;
   margin: 12px 0;
 }
 
@@ -361,7 +322,6 @@ main {
 .lang-list {
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
   color: #091e42;
   margin: 14px 20px;
   border: 1px solid #8993a4;
@@ -395,7 +355,6 @@ main {
   font-family: var(--font-round);
   font-weight: normal;
   font-size: 32px;
-  line-height: 44px;
   margin: 12px 0;
   padding: 30px 20px 0 20px;
   color: var(--font-color-1);
@@ -478,7 +437,6 @@ main {
 
 .about-header {
   font-size: 72px;
-  line-height: 88px;
   margin: 120px auto 0 auto;
 }
 
@@ -522,14 +480,12 @@ main {
 .skill-lang-header {
   font-weight: bold;
   font-size: 32px;
-  line-height: 44px;
   margin: 0 12px;
 }
 
 .skill-lang-li {
   font-weight: normal;
   font-size: 22px;
-  line-height: 43px;
   margin: 20px auto;
 }
 
@@ -570,7 +526,6 @@ textarea {
 input::placeholder {
   font-weight: normal;
   font-size: 15px;
-  line-height: 24px;
   color: #979493;
 }
 
@@ -583,7 +538,6 @@ textarea::placeholder {
   font-family: var(--font-inter);
   font-weight: normal;
   font-size: 15px;
-  line-height: 24px;
   color: #8b8686;
 }
 
@@ -630,7 +584,6 @@ footer {
     padding: 10px;
     font-weight: 600;
     font-size: 15px;
-    line-height: 20px;
   }
 
   .mobile-nav-elements,
@@ -653,13 +606,11 @@ footer {
 
   .header {
     font-size: 72px;
-    line-height: 81px;
     margin: 24px 0;
   }
 
   .description-heading {
     font-size: 32px;
-    line-height: 44px;
     margin: 24px 0;
   }
 
@@ -730,7 +681,6 @@ footer {
 
   .work-project-header {
     font-size: 40px;
-    line-height: 52px;
     margin: 0 0 10px 0;
   }
 
@@ -883,6 +833,38 @@ footer {
   .submit {
     align-self: flex-start;
   }
+  
+  /* Animations */
+
+  .home-page {
+    padding: 0 15px;
+    animation: appears 5s;
+  }
+  
+  @keyframes appears {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  nav:hover {
+    animation: slide-left 0.5s linear;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes slide-left {
+    0% {
+      background-position: right;
+    }
+  
+    100% {
+      background-position: left;
+    }
+  }
+
 }
 
 .bounce:hover {
