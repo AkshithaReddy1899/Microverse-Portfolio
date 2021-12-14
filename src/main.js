@@ -1,11 +1,11 @@
-const menu = document.getElementById("nav-elements");
+const menu = document.getElementById('nav-elements);
 
-const checkBox = document.getElementById("toggler");
+const checkBox = document.getElementById('toggler');
 
-checkBox.addEventListener( 'change', function () {
-  if(this.checked) {
+checkBox.addEventListener( 'change', function togglerMenu () {
+  if (this.checked) {
     menu.style.opacity = 1;
-  }else {
+  } else {
     menu.style.opacity = 0;
   }
-})
+});
