@@ -161,17 +161,17 @@ nav {
   top: 10px;
 }
 
-.menu-container .toggler:checked + .menu-icon > .line {
+.toggler:checked + .menu-icon > .line {
   transform: rotate(135deg);
 }
 
-.menu-container .toggler:checked + .menu-icon > .line::before,
-.menu-container .toggler:checked + .menu-icon > .line::after {
+.toggler:checked + .menu-icon > .line::before,
+.toggler:checked + .menu-icon > .line::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-.menu-container .toggler:checked:hover + .menu-icon > .line {
+.toggler:checked:hover + .menu-icon > .line {
   transform: rotate(225deg);
 }
 
