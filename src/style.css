@@ -846,6 +846,7 @@ footer {
     animation: appears 5s;
   }
 
+  /*
   @-webkit-keyframes appears {
     from {
       opacity: 0;
@@ -854,7 +855,7 @@ footer {
     to {
       opacity: 1;
     }
-  }
+  } */
 
   @keyframes appears {
     from {
@@ -872,6 +873,7 @@ footer {
     animation-fill-mode: forwards;
   }
 
+  /*
   @-webkit-keyframes slide-left {
     0% {
       background-position: right;
@@ -880,7 +882,7 @@ footer {
     100% {
       background-position: left;
     }
-  }
+  } */
 
   @keyframes slide-left {
     0% {
@@ -898,6 +900,7 @@ footer {
   animation: bounce 2s;
 }
 
+/*
 @-webkit-keyframes bounce {
   0%,
   20%,
@@ -914,7 +917,7 @@ footer {
   60% {
     transform: translateY(-5px);
   }
-}
+} */ 
 
 @keyframes bounce {
   0%,
@@ -939,6 +942,7 @@ footer {
   animation: bounceicon 3s;
 }
 
+/*
 @-webkit-keyframes bounceicon {
   0%,
   20%,
@@ -955,7 +959,7 @@ footer {
   60% {
     transform: translateY(-10px);
   }
-}
+} */
 
 @keyframes bounceicon {
   0%,
