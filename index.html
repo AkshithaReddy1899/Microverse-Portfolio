@@ -36,14 +36,11 @@
       <nav>
         <a href="#main">Akshitha Reddy</a>
 
-        <div class="menu-container">
-          <input type="checkbox" class="toggler" id="toggler">
-          <div class="menu-icon">
-            <div class="line"></div>
-          </div>
-        </div>
+        <button type="button" id="menu-container" onclick="togglerMenu()">
+          <span class="open" id="menu"></span>
+        </button>
 
-        <ul class="mobile-nav-elements" id="nav-elements">
+        <ul class="mobile-nav-elements showMenu" id="nav-elements">
           <li class="mobile-nav-list active"><a href="#work">Portfolio</a></li>
           <li class="mobile-nav-list active"><a href="#about">About</a></li>
           <li class="mobile-nav-list active"><a href="#contact">Contact</a></li>

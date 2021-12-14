@@ -1,30 +1,28 @@
 const menu = document.getElementById('nav-elements');
 const main = document.getElementById('main');
+const menuIcon = document.getElementById('menu-container');
+const menuOpenClose = document.getElementById('menu');
+const illustration = document.querySelector('.illustration-container');
 
-const checkBox = document.getElementById('toggler');
 
-checkBox.addEventListener('change', function togglerMenu() {
-  if (this.checked) {
+function togglerMenu() {
+  if(menuOpenClose.classList.contains('open')) {
     menu.style.opacity = 1;
-  } else {
+    illustration.style.display = 'none';
+    menuOpenClose.classList.remove('open');
+    menuOpenClose.classList.add('close');
+  } else if(menuOpenClose.classList.contains('close')) {
     menu.style.opacity = 0;
+    illustration.style.display = 'block';
+    menuOpenClose.classList.remove('close');
+    menuOpenClose.classList.add('open');
   }
-});
+}
 
-let anchors = document.querySelectorAll('.active');
+const navItems = document.querySelectorAll('.mobile-nav-list');
 
-console.log(anchors)
-/*
-for(let i=0; i<anchors.length; i++){
-  anchors[i].addEventListener("click", ()=>{
-    main.style.opacity = 1;
-  }) 
-} */
-
-anchors.forEach(link => {
-  link.addEventListener('click', ()=>{
-    menu.style.opacity = 0;
-    main.style.opacity = 1;
-    menu.style.opacity = 0;
-  })
-});
+navItems.forEach(
+  function (navItems) {
+    navItems.addEventListener('click', togglerMenu);
+  }
+)
