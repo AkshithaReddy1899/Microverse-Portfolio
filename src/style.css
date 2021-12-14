@@ -95,117 +95,66 @@ nav {
   height: 60px;
 }
 
+.menu-container {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  padding-right: -70px;
+  margin-right: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.close {
+  background: url('../assest/Cancel.png') no-repeat;
+  padding: 12px;
+}
+
+.menu {
+  background: url('../assest/Enabled.png') no-repeat;
+  padding: 20px;
+}
+
 .nav-elements {
   display: none;
 }
 
-/* menu-icon */
-
-.menu-container {
+.mobile-nav-elements-container {
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: 1%;
-  right: 0;
-  z-index: 1;
-  margin-right: 10px;
-  background: transparent;
-}
-
-.toggler {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  opacity: 0;
-}
-
-.menu-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: 55px;
-  height: 50px;
-  padding: 0.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.line {
-  position: relative;
-  flex: none;
-  width: 100%;
-  height: 1.2px;
-  border-bottom: 2px solid var(--font-color-1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-
-.line::before,
-.line::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  width: 100%;
-  height: 1.2px;
-  border-bottom: 2px solid var(--font-color-1);
-}
-
-.line::after {
-  top: 10px;
-}
-
-.toggler:checked + .menu-icon > .line {
-  transform: rotate(135deg);
-}
-
-.toggler:checked + .menu-icon > .line::before,
-.toggler:checked + .menu-icon > .line::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-.toggler:checked:hover + .menu-icon > .line {
-  transform: rotate(225deg);
+  top: 10%;
+  left: 0;
+  display: none;
 }
 
 .mobile-nav-elements {
-  background: #3c3a39;
-  position: absolute;
-  right: 0;
-  top: 9%;
-  width: 100vw;
-  height: 90vh;
-  display: block;
-  opacity: 0;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .mobile-nav-list {
   color: #fff5e1;
-  margin: 20px 30px;
-  font-size: 1.4rem;
-  padding: 20px 0 15px 30px;
-  border: 1px solid red;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 5px 30px;
+  padding: 30px;
   border: none;
   border-bottom: 1px solid #fff5e1;
 }
 
 /* main */
 main {
-  height: 95vh;
+  height: 590px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 0 20px;
   opacity: 1;
+  position: relative;
 }
 
 .home-page {
@@ -242,7 +191,7 @@ main {
 
 .illustration-container {
   width: 150px;
-  height: 320px;
+  height: 360px;
   background-repeat: no-repeat;
   background-image: url("../assest/Illustration.svg");
   position: absolute;
@@ -588,7 +537,17 @@ footer {
     display: block;
   }
 
+  .nav-elements-container {
+    width: auto;
+    height: auto;
+    position: static;
+    background: transparent;
+    margin: 0;
+  }
+
   .nav-elements {
+    position: static;
+    background: transparent;
     display: flex;
     flex-direction: row;
     margin: 0;
