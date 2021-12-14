@@ -161,17 +161,17 @@ nav {
   top: 10px;
 }
 
-.toggler:checked + .menu-icon > .line {
+.menu-container .toggler:checked + .menu-icon > .line {
   transform: rotate(135deg);
 }
 
-.toggler:checked + .menu-icon > .line::before,
-.toggler:checked + .menu-icon > .line::after {
+.menu-container .toggler:checked + .menu-icon > .line::before,
+.menu-container .toggler:checked + .menu-icon > .line::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-.toggler:checked:hover + .menu-icon > .line {
+.menu-container .toggler:checked:hover + .menu-icon > .line {
   transform: rotate(225deg);
 }
 
@@ -192,14 +192,13 @@ nav {
   margin: 20px 30px;
   font-size: 1.4rem;
   padding: 20px 0 15px 30px;
-  border: 1px solid red;
   border: none;
   border-bottom: 1px solid #fff5e1;
 }
 
 /* main */
 main {
-  height: 95vh;
+  height: 560px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,11 +242,12 @@ main {
 .illustration-container {
   width: 150px;
   height: 320px;
+  height: 360px;
   background-repeat: no-repeat;
   background-image: url("../assest/Illustration.svg");
   position: absolute;
-  bottom: 0;
   right: 0;
+  display: block;
 }
 
 /* WORK SECTION */
