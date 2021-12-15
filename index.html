@@ -7,7 +7,7 @@
 
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Poppins&family=Roboto&display=swap" rel="stylesheet"/>
 
     <!--stylesheet-->
@@ -16,18 +16,15 @@
     <link rel="shortcut icon" href="./assest/cartoon-icon.png" />
 
     <!--GOOGLE ANALYTICS-->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-3MG971N7GV"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MG971N7GV"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-3MG971N7GV");
+      gtag('config', 'G-3MG971N7GV');
     </script>
 
     <title>AKSHA Portfolio</title>
@@ -38,14 +35,23 @@
     <header>
       <nav>
         <a href="#main">Akshitha Reddy</a>
-        <button class="menu-container" type="button">
-          <img src="./assest/Enabled.png" alt="menu" />
+
+        <button type="button" id="menu-container" onclick="togglerMenu()">
+          <span class="open" id="menu"></span>
         </button>
+
+        <ul class="mobile-nav-elements showMenu" id="nav-elements">
+          <li class="mobile-nav-list active"><a href="#work">Portfolio</a></li>
+          <li class="mobile-nav-list active"><a href="#about">About</a></li>
+          <li class="mobile-nav-list active"><a href="#contact">Contact</a></li>
+         </ul>
+
         <ul class="nav-elements">
-          <li class="nav-list"><a href="#main">Portfolio</a></li>
-          <li class="nav-list"><a href="#main">About</a></li>
-          <li class="nav-list"><a href="#main">Contact</a></li>
-          <li class="nav-list"><a href="#main"><svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.4 2H15.6C16.7531 2 17.4977 2.00156 18.0643 2.04785C18.6077 2.09225 18.8091 2.1676 18.908 2.21799C19.2843 2.40973 19.5903 2.71569 19.782 3.09202C19.8324 3.19091 19.9078 3.39235 19.9521 3.93567C19.9984 4.50235 20 5.24689 20 6.4V11.6C20 12.7531 19.9984 13.4977 19.9521 14.0643C19.9078 14.6077 19.8324 14.8091 19.782 14.908C19.5903 15.2843 19.2843 15.5903 18.908 15.782C18.8091 15.8324 18.6077 15.9078 18.0643 15.9521C17.4977 15.9984 16.7531 16 15.6 16H6.4C5.24689 16 4.50235 15.9984 3.93567 15.9521C3.39235 15.9078 3.19091 15.8324 3.09202 15.782C2.71569 15.5903 2.40973 15.2843 2.21799 14.908C2.1676 14.8091 2.09225 14.6077 2.04785 14.0643C2.00156 13.4977 2 12.7531 2 11.6V6.4C2 5.24689 2.00156 4.50235 2.04785 3.93567C2.09225 3.39235 2.1676 3.19091 2.21799 3.09202C2.40973 2.71569 2.71569 2.40973 3.09202 2.21799C3.19091 2.1676 3.39235 2.09225 3.93567 2.04785C4.50235 2.00156 5.24689 2 6.4 2ZM0 6.4C0 4.15979 0 3.03969 0.435974 2.18404C0.819467 1.43139 1.43139 0.819467 2.18404 0.435974C3.03969 0 4.15979 0 6.4 0H15.6C17.8402 0 18.9603 0 19.816 0.435974C20.5686 0.819467 21.1805 1.43139 21.564 2.18404C22 3.03969 22 4.15979 22 6.4V11.6C22 13.8402 22 14.9603 21.564 15.816C21.1805 16.5686 20.5686 17.1805 19.816 17.564C18.9603 18 17.8402 18 15.6 18H6.4C4.15979 18 3.03969 18 2.18404 17.564C1.43139 17.1805 0.819467 16.5686 0.435974 15.816C0 14.9603 0 13.8402 0 11.6V6.4ZM5.5547 4.16795C5.09517 3.8616 4.4743 3.98577 4.16795 4.4453C3.8616 4.90483 3.98577 5.5257 4.4453 5.83205L10.4453 9.83205C10.7812 10.056 11.2188 10.056 11.5547 9.83205L17.5547 5.83205C18.0142 5.5257 18.1384 4.90483 17.8321 4.4453C17.5257 3.98577 16.9048 3.8616 16.4453 4.16795L11 7.79815L5.5547 4.16795Z" fill="white"/></svg></a></li>
+          <li class="nav-list"><a href="#work">Portfolio</a></li>
+          <li class="nav-list"><a href="#about">About</a></li>
+          <li class="nav-list"><a href="#contact">Contact</a></li>
+          <li class="nav-list">
+            <a href="#main"><svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.4 2H15.6C16.7531 2 17.4977 2.00156 18.0643 2.04785C18.6077 2.09225 18.8091 2.1676 18.908 2.21799C19.2843 2.40973 19.5903 2.71569 19.782 3.09202C19.8324 3.19091 19.9078 3.39235 19.9521 3.93567C19.9984 4.50235 20 5.24689 20 6.4V11.6C20 12.7531 19.9984 13.4977 19.9521 14.0643C19.9078 14.6077 19.8324 14.8091 19.782 14.908C19.5903 15.2843 19.2843 15.5903 18.908 15.782C18.8091 15.8324 18.6077 15.9078 18.0643 15.9521C17.4977 15.9984 16.7531 16 15.6 16H6.4C5.24689 16 4.50235 15.9984 3.93567 15.9521C3.39235 15.9078 3.19091 15.8324 3.09202 15.782C2.71569 15.5903 2.40973 15.2843 2.21799 14.908C2.1676 14.8091 2.09225 14.6077 2.04785 14.0643C2.00156 13.4977 2 12.7531 2 11.6V6.4C2 5.24689 2.00156 4.50235 2.04785 3.93567C2.09225 3.39235 2.1676 3.19091 2.21799 3.09202C2.40973 2.71569 2.71569 2.40973 3.09202 2.21799C3.19091 2.1676 3.39235 2.09225 3.93567 2.04785C4.50235 2.00156 5.24689 2 6.4 2ZM0 6.4C0 4.15979 0 3.03969 0.435974 2.18404C0.819467 1.43139 1.43139 0.819467 2.18404 0.435974C3.03969 0 4.15979 0 6.4 0H15.6C17.8402 0 18.9603 0 19.816 0.435974C20.5686 0.819467 21.1805 1.43139 21.564 2.18404C22 3.03969 22 4.15979 22 6.4V11.6C22 13.8402 22 14.9603 21.564 15.816C21.1805 16.5686 20.5686 17.1805 19.816 17.564C18.9603 18 17.8402 18 15.6 18H6.4C4.15979 18 3.03969 18 2.18404 17.564C1.43139 17.1805 0.819467 16.5686 0.435974 15.816C0 14.9603 0 13.8402 0 11.6V6.4ZM5.5547 4.16795C5.09517 3.8616 4.4743 3.98577 4.16795 4.4453C3.8616 4.90483 3.98577 5.5257 4.4453 5.83205L10.4453 9.83205C10.7812 10.056 11.2188 10.056 11.5547 9.83205L17.5547 5.83205C18.0142 5.5257 18.1384 4.90483 17.8321 4.4453C17.5257 3.98577 16.9048 3.8616 16.4453 4.16795L11 7.79815L5.5547 4.16795Z" fill="whit /"></path></svg></a></li>
         </ul>
       </nav>
     </header>
@@ -81,151 +87,51 @@
     </main>
 
     <!--WORK SECTION-->
-    <section class="work">
+    <section class="work" id="work">
+
+      <!--modal for projects start-->
+
+      <div class="modal-container">
+        <div class="modal">
+          <span class="modal-close-btn"></span>
+          <h2 class="modal-header" id="popuptitle"></h2>
+
+          <ul id="modallanguages" class="lang-list-ul modal-list">
+              
+          </ul>
+
+          <div class="modal-content">
+            <img src="" alt="project" id="modal-img">
+            <div class="model-para">
+              <p class="modal-description" id="modal-description"></p>
+              <div class="modal-btn-container">
+                <a href="#" class="project-btn btn">See live</a>
+                <a href="#" class="project-btn btn">See source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal end-->
+
+
       <h1 class="work-header">My Recent Works</h1>
 
       <hr />
 
       <!--main grid-->
-      <div class="work-main-grid">
-        <div class="work-project-display">
-          <img src="./assest/Img-Placeholder.png" alt="work" />
-        </div>
-        <div class="work-project-description">
-          <h2 class="work-project-header">Multi-Post Stories</h2>
-          <p class="work-project-para">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
+      <div id="main-grid" class="work-main-grid"></div>
 
-          <ul class="lang-list-ul">
-            <li class="lang-list">css</li>
-            <li class="lang-list">html</li>
-            <li class="lang-list">bootstrap</li>
-            <li class="lang-list">Ruby</li>
-          </ul>
+      <div id="secondary-grid" class="work-grid-container"></div>
 
-          <a href="#main" class="project-btn btn">See Project</a>
-        </div>
-      </div>
-      <div class="work-grid-container">
-        <!--grid elements-->
-        <!--grid elements 1-->
-        <div class="grid-project-container grid-1">
-          <div class="grid-project1 grid-project">
-            <h3 class="grid-project-header">Profesional Art Printing Data</h3>
-            <p class="grid-project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-
-            <ul class="lang-list-ul">
-              <li class="lang-list grid-lang-list">html</li>
-              <li class="lang-list grid-lang-list">bootstrap</li>
-              <li class="lang-list grid-lang-list">Ruby</li>
-            </ul>
-          </div>
-          <a href="#main" class="grid-btn btn">See Project</a>
-        </div>
-        <!--grid elements 2-->
-        <div class="grid-project-container grid-2">
-          <div class="grid-project2 grid-project">
-            <h4 class="grid-project-header">Profesional Art Printing Data</h4>
-            <p class="grid-project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-
-            <ul class="lang-list-ul">
-              <li class="lang-list grid-lang-list">html</li>
-              <li class="lang-list grid-lang-list">bootstrap</li>
-              <li class="lang-list grid-lang-list">Ruby</li>
-            </ul>
-          </div>
-          <a href="#main" class="grid-btn btn">See Project</a>
-        </div>
-
-        <!--grid elements 3-->
-        <div class="grid-project-container grid-3">
-          <div class="grid-project3 grid-project">
-            <h4 class="grid-project-header">Profesional Art Printing Data</h4>
-            <p class="grid-project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-
-            <ul class="lang-list-ul">
-              <li class="lang-list grid-lang-list">html</li>
-              <li class="lang-list grid-lang-list">bootstrap</li>
-              <li class="lang-list grid-lang-list">Ruby</li>
-            </ul>
-          </div>
-          <a href="#main" class="grid-btn btn">See Project</a>
-        </div>
-
-        <!--grid elements 4-->
-        <div class="grid-project-container grid-4">
-          <div class="grid-project4 grid-project">
-            <h4 class="grid-project-header">Profesional Art Printing Data</h4>
-            <p class="grid-project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-
-            <ul class="lang-list-ul">
-              <li class="lang-list grid-lang-list">html</li>
-              <li class="lang-list grid-lang-list">bootstrap</li>
-              <li class="lang-list grid-lang-list">Ruby</li>
-            </ul>
-          </div>
-          <a href="#main" class="grid-btn btn">See Project</a>
-        </div>
-
-        <!--grid elements 5-->
-        <div class="grid-project-container grid-5">
-          <div class="grid-project5 grid-project">
-            <h4 class="grid-project-header">Profesional Art Printing Data</h4>
-            <p class="grid-project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-
-            <ul class="lang-list-ul">
-              <li class="lang-list grid-lang-list">html</li>
-              <li class="lang-list grid-lang-list">bootstrap</li>
-              <li class="lang-list grid-lang-list">Ruby</li>
-            </ul>
-          </div>
-          <a href="#main" class="grid-btn btn">See Project</a>
-        </div>
-
-        <!--grid elements 6-->
-
-        <div class="grid-project-container grid-6">
-          <div class="grid-project6 grid-project">
-            <h4 class="grid-project-header">Profesional Art Printing Data</h4>
-            <p class="grid-project-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-
-            <ul class="lang-list-ul">
-              <li class="lang-list grid-lang-list">html</li>
-              <li class="lang-list grid-lang-list">bootstrap</li>
-              <li class="lang-list grid-lang-list">Ruby</li>
-            </ul>
-          </div>
-          <a href="#main" class="grid-btn btn">See Project</a>
-        </div>
-      </div>
     </section>
-
+    
     <!--About me-->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-section">
         <div class="about-sub-section">
-          <h1 class="about-header">About me</h1>
+          <h1 class="about-header header">About me</h1>
           <p class="about-description">
             Hello I'm a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
@@ -243,7 +149,8 @@
       <!--skills-->
       <div class="skills">
         <ul class="skills-lang">
-          <li class="skill-lang-header"><span class="rectangle"><svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.772461" y="12.7279" width="18" height="18" transform="rotate(-45 0.772461 12.7279)" fill="#FF6B00"/></svg> </span>Language</li>
+          <li class="skill-lang-header">
+            <span class="rectangle"><svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.772461" y="12.7279" width="18" height="18" transform="rotate(-45 0.772461 12.7279)" fill="#FF6B00"/></svg> </span>Language</li>
           <li class="skill-lang-li">Javascript</li>
           <li class="skill-lang-li">Ruby</li>
           <li class="skill-lang-li">Html</li>
@@ -251,7 +158,8 @@
         </ul>
 
         <ul class="skills-lang">
-          <li class="skill-lang-header"><span class="square"><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.455811" width="18" height="18" fill="#FF6B00" /></svg> </span>Frameworks</li>
+          <li class="skill-lang-header">
+            <span class="square"><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.455811" width="18" height="18" fill="#FF6B00" /></svg> </span>Frameworks</li>
           <li class="skill-lang-li">Bootstrap</li>
           <li class="skill-lang-li">Ruby on Rails</li>
           <li class="skill-lang-li">RSPec</li>
@@ -260,8 +168,7 @@
         </ul>
 
         <ul class="skills-lang">
-          <li class="skill-lang-header">
-            <span class="circle"><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.455811" width="18" height="18" rx="9" fill="#FF6B00"/></svg> </span>Skills</li>
+          <li class="skill-lang-header"><span class="circle"><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="0.455811" width="18" height="18" rx="9" fill="#FF6B00"/></svg> </span>Skills</li>
           <li class="skill-lang-li">Codekit</li>
           <li class="skill-lang-li">Github</li>
           <li class="skill-lang-li">Codepen</li>
@@ -271,7 +178,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div>
         <p class="contact-description">
           I'm always interested in hearing about new projects, so if you'd like
@@ -283,12 +190,14 @@
           <input type="text" id="name" placeholder="Full name" minlength="2" maxlength="30" name="name" required/>
         </label>
         <label for="email">
-          <input type="email" id="email" placeholder="Email address" name="email" required />
+          <input type="email" id="email" placeholder="Email address" name="email" required/>
         </label>
         <label for="msg">
           <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter text here" maxlength="500"></textarea>
         </label>
-        <button type="submit" class="project-btn submit btn">Get in touch</button>
+        <button type="submit" class="project-btn submit btn">
+          Get in touch
+        </button>
       </form>
     </section>
     <footer class="footer">
@@ -296,10 +205,11 @@
       <ul class="form-icons-container bounce">
         <li><a href="#main"><img src="./assest/icon-dark-1.png" alt="github" class="main-icon bounce-icon"/></a></li>
         <li><a href="#main"><img src="./assest/icon-dark-2.png" alt="in" class="main-icon bounce-icon"/></a></li>
-        <li><a href="#main"><img src="./assest/icon-dark-3.png" alt="icon-3" class="main-icon bounce-icon"/></a></li>
-        <li><a href="#main"><img src="./assest/icon-dark-4.png" alt="icon-4" class="main-icon bounce-icon"/></a></li>
+        <li><a href="#main"><img src="./assest/icon-dark-3.png" alt="icon-3" class="main-icon bounce-icon" /></a></li>
+        <li> <a href="#main"><img src="./assest/icon-dark-4.png" alt="icon-4" class="main-icon bounce-icon" /></a></li>
         <li><a href="#main"><img src="./assest/icon-dark-5.png" alt="m" class="main-icon bounce-icon" /></a></li>
       </ul>
     </footer>
+    <script src="src/main.js"></script>
   </body>
 </html>
