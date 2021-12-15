@@ -129,48 +129,5 @@ const modalDisplayBtn = document.querySelectorAll('.display-modal');
 modalDisplayBtn.forEach((element) => {
   element.addEventListener('click', () => openPopup(element.getAttribute('data-index')));
 });
-// const modal = document.querySelector('.modal-container');
+
 document.querySelector('.modal-close-btn').addEventListener('click', () => document.querySelector('.modal-container').style.display = 'none')
-// const body = document.getElementById('body');
-
-// function closeModal () {
-//   modal.style.opacity = 0;
-//   body.style["overflow-y"] = 'scroll';
-// }
-
-
-
-// modalClose.addEventListener('click', closeModal);
-
-// const modalHeader = document.querySelector('.modal-header');
-// const modalList = document.querySelector('.modal-list');
-// const modalImg = document.getElementById('modal-img');
-// const modalDescription = document.querySelector('.modal-description');
-
-// let i;
-// let listItem;
-// let langArr;
-
-// function modalContent() {
-//   modalHeader.textContent = modalData[i].name;
-//   modalImg.src = modalData[i].img;
-//   modalDescription.textContent = modalData[i].description;
-
-//   langArr = modalData[i].languages;
-  
-//   langArr.forEach(item => {
-    
-//     listItem = document.createElement('li');
-//     listItem.className = 'lang-list';
-//     listItem.textContent = item;
-//     modalList.appendChild(listItem);
-//     console.log(listItem.textContent = item);
-// });
-
-// }
-
-
-// function displayModal() {
-//   modal.style.opacity = 1;
-//   modalContent();
-// }
