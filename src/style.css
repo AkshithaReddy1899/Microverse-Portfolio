@@ -271,69 +271,6 @@ main {
   width: 124px;
 }
 
-/* MODAL STYLING */
-
-.modal-container {
-  margin: 1px auto;
-  position: fixed;
-  top: 10%;
-  right: 0;
-  left: 0;
-  opacity: 0;
-  transform: scale(1.1);
-  margin: 2rem auto;
-}
-
-.modal {
-  padding: 10px 10px;
-  position: absolute;
-  top: 30%;
-  right: 0;
-  left: 0;
-  background: #fff;
-  margin: 1px auto;
-  overflow: scroll;
-  width: 80%;
-}
-
-.modal-close-btn {
-  background: url('../assest/Cancel.png') no-repeat;
-  padding: 10px;
-  margin-top: 5px;
-  float: right;
-}
-
-.modal-header {
-  font-family: var(--font-roboto);
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.modal .lang-list {
-  margin-top: 35px;
-  margin-left: -15px;
-}
-
-.modal-description {
-  font-weight: 400;
-  font-size: 16px;
-  margin: 20px auto;
-}
-
-#modal-img {
-  width: 95%;
-}
-
-.modal-btn-container {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.modal-btn-container .btn {
-  width: 120px;
-  margin: 10px;
-}
-
 /* General Grid Styling */
 
 .work-grid-container {
@@ -373,9 +310,6 @@ main {
   background: rgba(170, 170, 170, 0.24);
   color: var(--font-color-1);
   margin: 0 5px;
-  font-weight: 500;
-  font-size: 15px;
-  padding: 10px;
 }
 
 .grid-btn {
