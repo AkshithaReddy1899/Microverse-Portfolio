@@ -269,29 +269,27 @@ main {
   margin-top: 10px;
   margin-left: 0;
   width: 124px;
+  cursor: pointer;
 }
 
 /* MODAL STYLING */
 
 .modal-container {
-  margin: 1px auto;
   position: fixed;
-  top: 10%;
+  top: 0;
   right: 0;
   left: 0;
-  opacity: 0;
-  transform: scale(1.1);
-  margin: 2rem auto;
+  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #00000075;
 }
 
 .modal {
   padding: 10px 10px;
-  position: absolute;
-  top: 30%;
-  right: 0;
-  left: 0;
   background: #fff;
-  margin: 1px auto;
+  margin: 40px auto auto auto;
   overflow: scroll;
   width: 80%;
 }
@@ -301,6 +299,7 @@ main {
   padding: 10px;
   margin-top: 5px;
   float: right;
+  cursor: pointer;
 }
 
 .modal-header {
@@ -393,7 +392,7 @@ main {
   position: absolute;
 }
 
-.grid-project1,
+/* .grid-project1,
 .grid-project4 {
   background: url("../assest/project-placeholder.png");
 }
@@ -406,7 +405,7 @@ main {
 .grid-project3,
 .grid-project6 {
   background: url("../assest/ImgPlaceholder3.png");
-}
+} */
 
 .grid-1 {
   grid-area: grid-1;
