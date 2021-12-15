@@ -2,8 +2,6 @@ const menu = document.getElementById('nav-elements');
 const menuOpenClose = document.getElementById('menu');
 const illustration = document.querySelector('.illustration-container');
 
-// /* pop up variables */
-
 function togglerMenu() {
   if (menuOpenClose.classList.contains('open')) {
     menu.style.opacity = 1;
@@ -24,54 +22,56 @@ navItems.forEach((element) => {
   element.addEventListener('click', togglerMenu);
 });
 
+
+
 const modalData = [
   {
     main: true,
     name: 'Multi-Post Stories',
     languages: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque possimus, repellendus recusandae dicta obcaecati minima expedita vero quidem et dolore impedit. Ea necessitatibus quisquam tenetur natus culpa illo laborum.',
     img: './assest/Img-Placeholder.png',
   },
   {
     main: false,
     name: 'Profesional Art Printing Data',
     languages: ['HTML', 'Bootstrap', 'Ruby'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus recusandae illum velit amet consectetur omnis aperiam aut. Incidunt quaerat ',
     img: 'https://images.unsplash.com/photo-1639413665566-2f75adf7b7ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
   },
   {
     main: false,
     name: 'Weather App',
     languages: ['HTML', 'Bootstrap', 'Ruby'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus recusandae illum velit amet consectetur omnis aperiam aut. Incidunt quaerat ',
     img: 'https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
   },
   {
     main: false,
     name: 'Project Showcase',
     languages: ['HTML', 'Bootstrap', 'Ruby'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus recusandae illum velit amet consectetur omnis aperiam aut. Incidunt quaerat consequatur magnam! Rerum sunt quos doloribus illo!',
     img: 'https://images.unsplash.com/photo-1639398948599-051840e7bdfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
   },
   {
     main: false,
     name: 'Pomodoro',
     languages: ['HTML', 'Bootstrap', 'Ruby'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus recusandae illum velit amet consectetur omnis aperiam aut. Incidunt quaerat ',
     img: 'https://images.unsplash.com/photo-1639413665566-2f75adf7b7ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
   },
   {
     main: false,
     name: 'Calculator',
     languages: ['HTML', 'Bootstrap', 'Ruby'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus recusandae illum velit amet consectetur omnis aperiam aut. Incidunt quaerat ',
     img: 'https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
   },
   {
     main: false,
     name: 'Landing Page',
     languages: ['HTML', 'Bootstrap', 'Ruby'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus recusandae illum velit amet consectetur omnis aperiam aut. Incidunt quaerat ',
     img: 'https://images.unsplash.com/photo-1639398948599-051840e7bdfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
   }
 ];
@@ -88,7 +88,7 @@ const modalData = [
         <div class="work-project-description">
           <h2 class="work-project-header">${project.name}</h2>
           <p class="work-project-para">
-            ${project.description}
+            ${project.description} ${project.description} 
           </p>
           <ul class="lang-list-ul">${lang}</ul>
           <button type="button" data-index="${index}" class="project-btn btn display-modal project1">See Project</button>
