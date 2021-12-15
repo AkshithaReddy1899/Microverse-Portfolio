@@ -22,8 +22,6 @@ navItems.forEach((element) => {
   element.addEventListener('click', togglerMenu);
 });
 
-
-
 const modalData = [
   {
     main: true,
@@ -79,8 +77,8 @@ const modalData = [
 (() => {
   modalData.forEach((project, index) => {
     let lang = '';
-    if(project.main){
-      project.languages.forEach((element) => lang += ` <li class="lang-list">${element}</li>`)
+    if (project.main) {
+      project.languages.forEach((element) => lang += ` <li class="lang-list">${element}</li>`);
       document.querySelector('#main-grid').innerHTML = `
         <div class="work-project-display">
           <img src="${project.img}" alt="${project.name}" />
@@ -95,7 +93,7 @@ const modalData = [
         </div>
       `;
     } else {
-      project.languages.forEach((element) => lang += `<li class="lang-list grid-lang-list">html</li>`)
+      project.languages.forEach((item) => lang += `<li class='lang-list grid-lang-list'>${item}</li>`);
       document.querySelector('#secondary-grid').innerHTML += `
       <div class="grid-project-container grid-1" style="background-image: url('${project.img}')">
         <div class="grid-project1 grid-project">
@@ -112,22 +110,22 @@ const modalData = [
       </div>
       `;
     }
-  })
-})()
+  });
+})();
 
 const openPopup = (index) => {
   let lang = '';
-  modalData[index].languages.forEach((element) => lang += ` <li class="lang-list">${element}</li>`)
-  document.querySelector('.modal-container').style.display = 'block'
-  document.querySelector('#popuptitle').textContent = modalData[index].name
-  document.querySelector('#modallanguages').innerHTML = lang
-  document.querySelector('#modal-description').textContent = modalData[index].description
-  document.querySelector('#modal-img').setAttribute('src',modalData[index].img)
-}
+  modalData[index].languages.forEach((element) => lang += ` <li class="lang-list">${element}</li>`);
+  document.querySelector('.modal-container').style.display = 'block';
+  document.querySelector('#popuptitle').textContent = modalData[index].name;
+  document.querySelector('#modallanguages').innerHTML = lang;
+  document.querySelector('#modal-description').textContent = modalData[index].description;
+  document.querySelector('#modal-img').setAttribute('src', modalData[index].img);
+};
 
 const modalDisplayBtn = document.querySelectorAll('.display-modal');
 modalDisplayBtn.forEach((element) => {
   element.addEventListener('click', () => openPopup(element.getAttribute('data-index')));
 });
 
-document.querySelector('.modal-close-btn').addEventListener('click', () => document.querySelector('.modal-container').style.display = 'none')
+document.querySelector('.modal-close-btn').addEventListener('click', () => document.querySelector('.modal-container').style.display = 'none');
