@@ -71,14 +71,13 @@ const modalData = [
     languages: ['HTML', 'Bootstrap', 'Ruby'],
     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus recusandae illum velit amet consectetur omnis aperiam aut. Incidunt quaerat ',
     img: 'https://images.unsplash.com/photo-1639398948599-051840e7bdfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-  }
-];
+  }];
 
 (() => {
   modalData.forEach((project, index) => {
     let lang = '';
     if (project.main) {
-      project.languages.forEach((element) => lang += ` <li class="lang-list">${element}</li>`);
+      project.languages.forEach((element) => { lang += ` <li class="lang-list">${element}</li>`)};
       document.querySelector('#main-grid').innerHTML = `
         <div class="work-project-display">
           <img src="${project.img}" alt="${project.name}" />
@@ -93,7 +92,7 @@ const modalData = [
         </div>
       `;
     } else {
-      project.languages.forEach((item) => lang += `<li class='lang-list grid-lang-list'>${item}</li>`);
+      project.languages.forEach((item) => { lang += `<li class='lang-list grid-lang-list'>${item}</li>`)};
       document.querySelector('#secondary-grid').innerHTML += `
       <div class="grid-project-container grid-1" style="background-image: url('${project.img}')">
         <div class="grid-project1 grid-project">
@@ -115,7 +114,7 @@ const modalData = [
 
 const openPopup = (index) => {
   let lang = '';
-  modalData[index].languages.forEach((element) => lang += ` <li class="lang-list">${element}</li>`);
+  modalData[index].languages.forEach((element) => { lang += ` <li class="lang-list">${element}</li>`)};
   document.querySelector('.modal-container').style.display = 'block';
   document.querySelector('#popuptitle').textContent = modalData[index].name;
   document.querySelector('#modallanguages').innerHTML = lang;
@@ -128,4 +127,4 @@ modalDisplayBtn.forEach((element) => {
   element.addEventListener('click', () => openPopup(element.getAttribute('data-index')));
 });
 
-document.querySelector('.modal-close-btn').addEventListener('click', () => document.querySelector('.modal-container').style.display = 'none');
+document.querySelector('.modal-close-btn').addEventListener('click', () => {document.querySelector('.modal-container').style.display = 'none')};
