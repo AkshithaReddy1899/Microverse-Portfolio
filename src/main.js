@@ -127,4 +127,4 @@ modalDisplayBtn.forEach((element) => {
   element.addEventListener('click', () => openPopup(element.getAttribute('data-index')));
 });
 
-document.querySelector('.modal-close-btn').addEventListener('click', () =>{ document.querySelector('.modal-container').style.display = 'none'; });
+document.querySelector('.modal-close-btn').addEventListener('click', () => { document.querySelector('.modal-container').style.display = 'none'; });
