@@ -278,6 +278,67 @@ main {
   margin-top: 10px;
   margin-left: 0;
   width: 124px;
+  cursor: pointer;
+}
+
+/* MODAL STYLING */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #00000075;
+}
+
+.modal {
+  padding: 10px 10px;
+  background: #fff;
+  margin: 40px auto auto auto;
+  width: 80%;
+}
+
+.modal-close-btn {
+  background: url('../assest/Cancel.png') no-repeat;
+  padding: 10px;
+  margin-top: 5px;
+  float: right;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.modal .lang-list {
+  margin-top: 35px;
+  margin-left: -15px;
+}
+
+.modal-description {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 20px auto;
+}
+
+#modal-img {
+  width: 95%;
+}
+
+.modal-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal-btn-container .btn {
+  width: 120px;
+  margin: 10px;
 }
 
 /* General Grid Styling */
