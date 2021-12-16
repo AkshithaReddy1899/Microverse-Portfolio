@@ -557,6 +557,12 @@ textarea::placeholder {
   align-self: center;
 }
 
+#error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
 .form-line {
   margin: 0;
   border: none;

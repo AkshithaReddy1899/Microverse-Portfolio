@@ -2,25 +2,7 @@ const menu = document.getElementById('nav-elements');
 const menuOpenClose = document.getElementById('menu');
 const illustration = document.querySelector('.illustration-container');
 
-function togglerMenu() {
-  if (menuOpenClose.classList.contains('open')) {
-    menu.style.opacity = 1;
-    illustration.style.display = 'none';
-    menuOpenClose.classList.remove('open');
-    menuOpenClose.classList.add('close');
-  } else if (menuOpenClose.classList.contains('close')) {
-    menu.style.opacity = 0;
-    illustration.style.display = 'block';
-    menuOpenClose.classList.remove('close');
-    menuOpenClose.classList.add('open');
-  }
-}
-
-const navItems = document.querySelectorAll('.mobile-nav-list');
-
-navItems.forEach((element) => {
-  element.addEventListener('click', togglerMenu);
-});
+/* pop up variables */
 
 const modalData = [
   {
@@ -72,6 +54,31 @@ const modalData = [
     description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus recusandae illum velit amet consectetur omnis aperiam aut. Incidunt quaerat ',
     img: 'https://images.unsplash.com/photo-1639398948599-051840e7bdfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
   }];
+
+
+/* mobile menu */
+
+function togglerMenu() {
+  if (menuOpenClose.classList.contains('open')) {
+    menu.style.opacity = 1;
+    illustration.style.display = 'none';
+    menuOpenClose.classList.remove('open');
+    menuOpenClose.classList.add('close');
+  } else if (menuOpenClose.classList.contains('close')) {
+    menu.style.opacity = 0;
+    illustration.style.display = 'block';
+    menuOpenClose.classList.remove('close');
+    menuOpenClose.classList.add('open');
+  }
+}
+
+const navItems = document.querySelectorAll('.mobile-nav-list');
+
+navItems.forEach((element) => {
+  element.addEventListener('click', togglerMenu);
+});
+
+/* POP UP WINDOW */
 
 (() => {
   modalData.forEach((project, index) => {
@@ -128,3 +135,12 @@ modalDisplayBtn.forEach((element) => {
 });
 
 document.querySelector('.modal-close-btn').addEventListener('click', () => { document.querySelector('.modal-container').style.display = 'none'; });
+
+/* FORM VALIDATIONS */
+
+const submit = document.getElementById('submit');
+const emailError = document.getElementById('error');
+
+document.getElementById('submit').addEventListener('click', (event) => {
+  event.preventDefault();  
+});
