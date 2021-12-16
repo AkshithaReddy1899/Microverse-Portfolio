@@ -10,7 +10,7 @@ const modalData = [
     name: 'Multi-Post Stories',
     languages: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque possimus, repellendus recusandae dicta obcaecati minima expedita vero quidem et dolore impedit. Ea necessitatibus quisquam tenetur natus culpa illo laborum.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque possimus, repellendus recusandae dicta obcaecati minima expedita vero quidem et dolore impedit.',
     img: './assest/Img-Placeholder.png',
   },
   {
