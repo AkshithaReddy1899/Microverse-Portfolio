@@ -146,8 +146,9 @@ const openPopup = (index) => {
 
 const modalDisplayBtn = document.querySelectorAll('.display-modal');
 modalDisplayBtn.forEach((element) => {
-  element.addEventListener('click', () =>
+  element.addEventListener('click', () =>{
     openPopup(element.getAttribute('data-index'));
+  }
 });
 
 document.querySelector('.modal-close-btn').addEventListener('click', () => {
