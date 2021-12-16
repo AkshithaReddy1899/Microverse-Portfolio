@@ -147,10 +147,10 @@ const openPopup = (index) => {
 const modalDisplayBtn = document.querySelectorAll('.display-modal');
 
 modalDisplayBtn.forEach((element) => {
-  element.addEventListener('click' , () => {
+  element.addEventListener('click', () => {
     openPopup(element.getAttribute('data-index'));
-  })
-})
+  });
+});
 
 document.querySelector('.modal-close-btn').addEventListener('click', () => {
   document.querySelector('.modal-container').style.display = 'none';
@@ -166,7 +166,7 @@ submit.addEventListener('click', (event) => {
   const emailValidation = /[A-Z]/.test(email);
 
   if (emailValidation) {
-    emailError.textContent ='To submit the form, please enter your email id in lowercase';
+    emailError.textContent = 'To submit the form, please enter your email id in lowercase';
     event.preventDefault();
   }
 });
