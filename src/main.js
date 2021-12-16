@@ -138,8 +138,7 @@ const openPopup = (index) => {
   document.querySelector('.modal-container').style.display = 'block';
   document.querySelector('#popuptitle').textContent = modalData[index].name;
   document.querySelector('#modallanguages').innerHTML = lang;
-  document.querySelector('#modal-description').textContent =
-    modalData[index].description;
+  document.querySelector('#modal-description').textContent = modalData[index].description;
   document
     .querySelector('#modal-img')
     .setAttribute('src', modalData[index].img);
@@ -148,8 +147,7 @@ const openPopup = (index) => {
 const modalDisplayBtn = document.querySelectorAll('.display-modal');
 modalDisplayBtn.forEach((element) => {
   element.addEventListener('click', () =>
-    openPopup(element.getAttribute('data-index'))
-  );
+    openPopup(element.getAttribute('data-index'));
 });
 
 document.querySelector('.modal-close-btn').addEventListener('click', () => {
@@ -161,13 +159,12 @@ document.querySelector('.modal-close-btn').addEventListener('click', () => {
 const submit = document.getElementById('submit');
 const emailError = document.getElementById('error');
 
-document.getElementById('submit').addEventListener('click', (event) => {
+submit.addEventListener('click', (event) => {
   const email = document.getElementById('email').value;
   const emailValidation = /[A-Z]/.test(email);
 
   if (emailValidation) {
-    emailError.textContent =
-      'To submit the form, please enter your email id in lowercase';
+    emailError.textContent ='To submit the form, please enter your email id in lowercase';
     event.preventDefault();
   }
 });
