@@ -3,10 +3,10 @@
   --main-background: #1c1a19;
   --font-color-1: #fff;
   --font-color-2: #f55800;
-  --font-round: "Crete Round", serif;
-  --font-poppins: "Poppins", sans-serif;
-  --font-roboto: "Roboto", sans-serif;
-  --font-inter: "Inter", sans-serif;
+  --font-round: 'Crete Round', serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-inter: 'Inter', sans-serif;
 }
 
 /* General styling */
@@ -117,7 +117,7 @@ nav {
 }
 
 .close {
-  background: url('../assest/Cancel.png') no-repeat;
+  background: url('../assest/close.png') no-repeat;
   padding: 12px;
 }
 
@@ -188,7 +188,7 @@ main {
   width: 150px;
   height: 360px;
   background-repeat: no-repeat;
-  background-image: url("../assest/Illustration.svg");
+  background-image: url('../assest/Illustration.svg');
   position: absolute;
   right: 0;
   bottom: -5%;
@@ -269,6 +269,7 @@ main {
   margin-top: 10px;
   margin-left: 0;
   width: 124px;
+  cursor: pointer;
 }
 
 /* General Grid Styling */
@@ -286,14 +287,19 @@ main {
   align-items: center;
   text-align: left;
   flex-direction: column;
+  filter: contrast(90%);
+}
+
+.grid-project-container:hover {
+  filter: contrast(100%);
 }
 
 .grid-project-header {
   font-family: var(--font-round);
   font-weight: normal;
   font-size: 32px;
-  margin: 12px 0;
-  padding: 30px 20px 0 20px;
+  margin: 0;
+  padding: 0 20px 0 20px;
   color: var(--font-color-1);
 }
 
@@ -327,21 +333,6 @@ main {
   position: absolute;
 }
 
-.grid-project1,
-.grid-project4 {
-  background: url("../assest/project-placeholder.png");
-}
-
-.grid-project2,
-.grid-project5 {
-  background: url("../assest/ImgPlaceholder2.png");
-}
-
-.grid-project3,
-.grid-project6 {
-  background: url("../assest/ImgPlaceholder3.png");
-}
-
 .grid-1 {
   grid-area: grid-1;
 }
@@ -364,6 +355,67 @@ main {
 
 .grid-6 {
   grid-area: grid-6;
+}
+
+/* MODAL STYLING */
+
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  padding: 10px 10px;
+  background: #fff;
+  margin: 40px auto auto auto;
+  width: 80%;
+}
+
+.modal-close-btn {
+  padding: 10px;
+  margin-top: 5px;
+  float: right;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.modal .lang-list {
+  margin-top: 35px;
+  margin-left: -15px;
+}
+
+.modal-description {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 20px auto;
+}
+
+#modal-img {
+  width: 95%;
+}
+
+.modal-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal-btn-container .btn {
+  width: 120px;
+  margin: 10px;
 }
 
 /* About Section */
@@ -521,7 +573,7 @@ footer {
   background: var(--font-color-1);
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
   nav {
     justify-content: space-between;
     padding: 7px 150px 0 150px;
@@ -595,7 +647,7 @@ footer {
     height: 710px;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url("../assest/Illustration-header.png");
+    background-image: url('../assest/Illustration-header.png');
     position: absolute;
     right: 0;
     top: 10%;
@@ -603,7 +655,7 @@ footer {
 
   /* WORK SECTION */
   .work {
-    padding: 100px 150px;
+    padding: 100px 50px;
   }
 
   .work-header {
@@ -631,7 +683,7 @@ footer {
   .work-project-description {
     display: flex;
     width: 440px;
-    margin: 24px 60px;
+    margin: 14px 60px;
     font-size: 20px;
     line-height: 28px;
     flex-direction: column;
@@ -657,15 +709,18 @@ footer {
 
   .work-grid-container {
     padding-top: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "grid-1 grid-2 grid-3" "grid-4 grid-5 grid-6";
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px auto;
+    max-width: 1170px;
   }
 
   .grid-project-container {
     height: 370px;
+    margin: 10px 10px;
   }
 
   .grid-project-container:hover {
@@ -681,6 +736,66 @@ footer {
     display: block;
     text-align: center;
     padding: 10px;
+  }
+
+  /* MODAL STYLING */
+  .modal-container {
+    padding-top: 20px;
+  }
+
+  .modal {
+    padding: 10px 40px;
+    background: #fff;
+    margin: 40px auto auto auto;
+    width: 80%;
+    height: 90vh;
+  }
+
+  .modal-header {
+    font-weight: 600;
+    font-size: 32px;
+  }
+
+  .modal ul {
+    padding: 0;
+  }
+
+  .modal .lang-list {
+    margin: 35px 10px 20px 0;
+  }
+
+  .modal-content {
+    display: flex;
+  }
+
+  .modal-para {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-description {
+    font-weight: 400;
+    margin: 20px 30px;
+  }
+
+  #modal-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  .modal-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .modal-btn-container .btn {
+    width: 120px;
+    margin: 10px;
   }
 
   /* ABOUT SECTION */
@@ -725,7 +840,7 @@ footer {
   .about-illustration {
     width: 700px;
     height: 550px;
-    background: url("../assest/illustration-about-me.svg");
+    background: url('../assest/illustration-about-me.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     float: right;
