@@ -5,7 +5,8 @@ Flexbox to place elements in the page.
 Build a personal portfolio site.
 Use images and backgrounds to enhance the look of the website.
 
-![Portfolio](https://user-images.githubusercontent.com/70577783/143551478-492cca22-8213-4d55-aa40-f85daab4f30e.png)
+![Portfolio](./assest/Portfolio_Screenshot-1.png)
+![portfolio](./assest/Portfolio_Screenshot-2.png)
 
 # Project Objectives
 
