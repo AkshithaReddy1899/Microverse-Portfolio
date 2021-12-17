@@ -557,6 +557,12 @@ textarea::placeholder {
   align-self: center;
 }
 
+#error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
 .form-line {
   margin: 0;
   border: none;
@@ -660,6 +666,7 @@ footer {
 
   .work-header {
     text-align: left;
+    padding-left: 50px;
   }
 
   .work hr {
@@ -674,6 +681,7 @@ footer {
   .work-main-grid {
     display: flex;
     margin-top: 100px;
+    padding-left: 50px;
   }
 
   .work-project-display img {
@@ -682,7 +690,7 @@ footer {
 
   .work-project-description {
     display: flex;
-    width: 440px;
+    width: 560px;
     margin: 14px 60px;
     font-size: 20px;
     line-height: 28px;
@@ -691,11 +699,16 @@ footer {
 
   .work-project-header {
     font-size: 40px;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
   }
 
   .lang-list-ul {
-    margin: 0;
+    margin: 10px 0;
+  }
+
+  .lang-list-ul li {
+    padding: 3px 10px;
+    font-weight: bolder;
   }
 
   .lang-list {
@@ -766,23 +779,30 @@ footer {
 
   .modal-content {
     display: flex;
+    height: 400px;
   }
 
   .modal-para {
     width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: flex-start;
   }
 
   .modal-description {
     font-weight: 400;
-    margin: 20px 30px;
+    margin: 0 30px 20px 30px;
+  }
+
+  .img-cont {
+    width: 550px;
+    height: auto;
   }
 
   #modal-img {
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     float: left;
@@ -791,6 +811,7 @@ footer {
   .modal-btn-container {
     display: flex;
     justify-content: space-evenly;
+    margin-left: 20px;
   }
 
   .modal-btn-container .btn {

@@ -287,7 +287,8 @@
           to chat please get in touch.
         </p>
       </div>
-      <form action="https://formspree.io/f/xknywqjb" method="POST">
+
+      <form action="https://formspree.io/f/xknywqjb" method="POST" id="form">
         <label for="name">
           <input
             type="text"
@@ -318,7 +319,8 @@
             maxlength="500"
           ></textarea>
         </label>
-        <button type="submit" class="project-btn submit btn">
+        <p id="error"></p>
+        <button type="submit" id="submit" class="project-btn submit btn">
           Get in touch
         </button>
       </form>
@@ -338,7 +340,7 @@
           <a href="#main"
             ><img
               src="./assest/icon-dark-2.png"
-              alt="in"
+              alt="indeed"
               class="main-icon bounce-icon"
           /></a>
         </li>
@@ -358,14 +360,7 @@
               class="main-icon bounce-icon"
           /></a>
         </li>
-        <li>
-          <a href="#main"
-            ><img
-              src="./assest/icon-dark-5.png"
-              alt="m"
-              class="main-icon bounce-icon"
-          /></a>
-        </li>
+        <li><a href="#main"><img src="./assest/icon-dark-5.png" alt="medium" class="main-icon bounce-icon"/></a></li>
       </ul>
     </footer>
     <script src="src/main.js"></script>
