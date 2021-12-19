@@ -1,27 +1,26 @@
 # Microverse-Portfolio-Project
 
-Portfolio project to understand how to parse a Figma design to create a UI.
-Flexbox to place elements in the page.
-Build a personal portfolio site.
-Use images and backgrounds to enhance the look of the website.
+## Portfolio website to showcase my education, qualifications, skills, training, experiences, projects, resume.
 
 ![Portfolio](./assest/Portfolio_Screenshot-1.png)
 ![portfolio](./assest/Portfolio_Screenshot-2.png)
-
-# Project Objectives
-
-Understand how to parse a Figma design to create a UI.
-
-Use Flexbox and Grid to place elements in the page.
-
-Build a personal portfolio site.
-
-Use images and backgrounds to enhance the look of the website.
 
 # Built With
 HTML
 
 CSS
+
+JavaScript
+
+# Additional tools
+
+Figma
+
+FormSpree
+
+Github pages
+
+Google Analytics
 
 # Demo link
 
