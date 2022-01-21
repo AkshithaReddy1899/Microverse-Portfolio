@@ -7,11 +7,13 @@ const illustration = document.querySelector('.illustration-container');
 const modalData = [
   {
     main: true,
-    name: 'Multi-Post Stories',
-    languages: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    name: 'To-do-list',
+    languages: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque possimus, repellendus recusandae dicta obcaecati minima expedita vero quidem et dolore impedit.',
-    img: './assest/Img-Placeholder.png',
+    img: './assest/Projects/ToDoList.png',
+    link: 'https://akshithareddy1899.github.io/Microverse-Portfolio/',
+    source: 'https://github.com/AkshithaReddy1899/Microverse-Portfolio',
   },
   {
     main: false,
