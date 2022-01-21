@@ -13,7 +13,7 @@ const modalData = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque possimus, repellendus recusandae dicta obcaecati minima expedita vero quidem et dolore impedit.',
     img: './assest/Projects/ToDoList.png',
     link: 'https://akshithareddy1899.github.io/Microverse-Portfolio/',
-    source: 'https://github.com/AkshithaReddy1899/Microverse-Portfolio'
+    source: 'https://github.com/AkshithaReddy1899/Microverse-Portfolio',
   },
   {
     main: false,
